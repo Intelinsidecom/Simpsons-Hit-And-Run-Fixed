@@ -1,0 +1,281 @@
+
+G:\Newfolder\shr\SimpsonsHitRun\tools\ArtChecker>dumpbin /headers atcmaker_original.exe
+Microsoft (R) COFF/PE Dumper Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file atcmaker_original.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        3D4D9758 time date stamp Sun Aug  4 14:06:32 2002
+               0 file pointer to symbol table
+               0 number of symbols
+              E0 size of optional header
+             10F characteristics
+                   Relocations stripped
+                   Executable
+                   Line numbers stripped
+                   Symbols stripped
+                   32 bit word machine
+
+OPTIONAL HEADER VALUES
+             10B magic # (PE32)
+            6.00 linker version
+           2F000 size of code
+           26000 size of initialized data
+               0 size of uninitialized data
+           2DC26 entry point (0042DC26)
+            1000 base of code
+           30000 base of data
+          400000 image base (00400000 to 00455FFF)
+            1000 section alignment
+            1000 file alignment
+            4.00 operating system version
+            0.00 image version
+            4.00 subsystem version
+               0 Win32 version
+           56000 size of image
+            1000 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+               0 DLL characteristics
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+           36E70 [      50] RVA [size] of Import Directory
+               0 [       0] RVA [size] of Resource Directory
+               0 [       0] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+               0 [       0] RVA [size] of Base Relocation Directory
+               0 [       0] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+               0 [       0] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+           30000 [     1F8] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+   2E782 virtual size
+    1000 virtual address (00401000 to 0042F781)
+   2F000 size of raw data
+    1000 file pointer to raw data (00001000 to 0002FFFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+    82E0 virtual size
+   30000 virtual address (00430000 to 004382DF)
+    9000 size of raw data
+   30000 file pointer to raw data (00030000 to 00038FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #3
+   .data name
+   1C0D4 virtual size
+   39000 virtual address (00439000 to 004550D3)
+    B000 size of raw data
+   39000 file pointer to raw data (00039000 to 00043FFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+  Summary
+
+       1D000 .data
+        9000 .rdata
+       2F000 .text
+
+G:\Newfolder\shr\SimpsonsHitRun\tools\ArtChecker>HitRun\tools\ArtChecker>dumpbin /imports atcmaker_original.exe
+Microsoft (R) COFF/PE Dumper Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file atcmaker_original.exe
+
+File Type: EXECUTABLE IMAGE
+
+  Section contains the following imports:
+
+    LIBMYSQL.dll
+                430000 Import Address Table
+                436EC0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   20 mysql_escape_string
+                   2F mysql_init
+                   19 mysql_data_seek
+                   24 mysql_fetch_lengths
+                   25 mysql_fetch_row
+                   21 mysql_fetch_field
+                   27 mysql_field_seek
+                   17 mysql_connect
+                   16 mysql_close
+                   41 mysql_select_db
+                   3B mysql_query
+                   44 mysql_store_result
+                   1F mysql_error
+                   37 mysql_num_rows
+                   36 mysql_num_fields
+                   29 mysql_free_result
+
+    MSVCP60.dll
+                430044 Import Address Table
+                436F04 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  1D0 ??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+                  117 ??1ios_base@std@@UAE@XZ
+                  273 ??_7?$basic_ios@DU?$char_traits@D@std@@@std@@6B@
+                  50F ?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
+                  1B0 ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@M@Z
+                  3F8 ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+                  32D ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+                  43B ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+                  1C8 ??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z
+                  473 ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+                   9E ??0Init@ios_base@std@@QAE@XZ
+                  109 ??1Init@ios_base@std@@QAE@XZ
+                   A5 ??0_Winit@std@@QAE@XZ
+                  10D ??1_Winit@std@@QAE@XZ
+                  41C ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+                  661 ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+                  34A ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+                  392 ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+                  529 ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+                  123 ??1strstream@std@@UAE@XZ
+                  10B ??1_Lockit@std@@QAE@XZ
+                   A2 ??0_Lockit@std@@QAE@XZ
+                   E9 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+                  420 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+                  3F2 ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+                  406 ?_Xran@std@@YAXXZ
+                   47 ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z
+                   D9 ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+                   DB ??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+                   20 ??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z
+                  2AA ??_7ios_base@std@@6B@
+                  5E2 ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z
+                  7B1 ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+                  756 ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PADH@Z
+                  752 ?seekpos@strstreambuf@std@@MAE?AV?$fpos@H@2@V32@H@Z
+                  747 ?seekoff@strstreambuf@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+                  7F6 ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPBDH@Z
+                  7F4 ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPADH@Z
+                  7D4 ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+                  7DD ?underflow@strstreambuf@std@@MAEHXZ
+                  76D ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+                  688 ?pbackfail@strstreambuf@std@@MAEHH@Z
+                  681 ?overflow@strstreambuf@std@@MAEHH@Z
+                   E7 ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ
+                  3BE ?_Init@strstreambuf@std@@IAEXHPAD0H@Z
+                  38D ?_Global@_Locimp@locale@std@@0PAV123@A
+                  3BD ?_Init@locale@std@@CAPAV_Locimp@12@XZ
+                  124 ??1strstreambuf@std@@UAE@XZ
+                  437 ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ
+                  1DE ??8std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z
+                  1FA ??A?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAADI@Z
+                  358 ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+                  338 ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
+                  405 ?_Xlen@std@@YAXXZ
+                   49 ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV?$allocator@D@1@@Z
+                  217 ??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z
+                  219 ??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBDABV10@@Z
+                  444 ?clear@ios_base@std@@QAEXH_N@Z
+                  57A ?get@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEAAV12@PADHD@Z
+                  511 ?ends@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z
+
+    MSVCRT.dll
+                430138 Import Address Table
+                436FF8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   49 __CxxFrameHandler
+                  249 exit
+                  29E printf
+                  192 _purecall
+                  2B2 sprintf
+                   F1 _ftol
+                   41 _CxxThrowException
+                  298 memmove
+                  2D3 tolower
+                   29 ?name@type_info@@QBEPBDXZ
+                  2C6 strtod
+                   15 ??8type_info@@QBEHABV0@@Z
+                   28 ?before@type_info@@QBEHABV1@@Z
+                   A0 _assert
+                   4C __RTDynamicCast
+                  2C1 strncpy
+                  2C9 strtoul
+                  257 fopen
+                  24C fclose
+                  264 ftell
+                  262 fseek
+                  25D fread
+                  266 fwrite
+                  25E free
+                  291 malloc
+                  2A4 qsort
+                    F ??2@YAPAXI@Z
+                  2C0 strncmp
+                  115 _isctype
+                  290 longjmp
+                  1A8 _setjmp3
+                   CA _except_handler3
+                   2E ?terminate@@YAXXZ
+                    E ??1type_info@@UAE@XZ
+                   55 __dllonexit
+                  186 _onexit
+                   D3 _exit
+                   48 _XcptFilter
+                   64 __p___initenv
+                   58 __getmainargs
+                  10F _initterm
+                   83 __setusermatherr
+                   9D _adjust_fdiv
+                   6A __p__commode
+                   6F __p__fmode
+                   81 __set_app_type
+                   B7 _controlfp
+
+  Summary
+
+       1D000 .data
+        9000 .rdata
+       2F000 .text
+
+G:\Newfolder\shr\SimpsonsHitRun\tools\ArtChecker>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="interface">
+      <UniqueIdentifier>{f4a2f43c-1bb3-4815-9a97-d54f9113ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{7d0c09cc-77a0-4811-ab4b-e05d5ec7cd2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d">
+      <UniqueIdentifier>{32ef6e9a-a841-4515-b1b1-16662291ce66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d\shaders">
+      <UniqueIdentifier>{97671b4d-bd8f-49fc-ae96-864a48c082b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d\vsh">
+      <UniqueIdentifier>{a0c30d8c-5f8f-48fd-a413-982c2116403c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d\psh">
+      <UniqueIdentifier>{8a60b3bc-9e87-4777-8fc8-cc9efc9af918}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\pddi\Pddi.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\Pddienum.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\Pddiwin32.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\buildconfig.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddiext.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddipc.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddishade.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pdditype.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\Font.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\basecontext.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\baseshader.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\basetype.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\debug.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\romans.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\context.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\device.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\direct3d.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\display.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\prim.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\primstream.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\resource.h">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\state.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\texture.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\util.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\vertprog.hpp">
+      <Filter>d3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\errorshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\hktoonshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\layeredlmapshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\layeredshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\lightmapshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\pointspriteshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\projectedtextureshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\reflectshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\shader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\shaderdata.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\shadersetup.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\simpleshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\dx8\shaders\toonshader.hpp">
+      <Filter>d3d\shaders</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pddi\base\basecontext.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\baseshader.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\font.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\pddiobj.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\context.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\device.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\display.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\prim.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\primstream.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\state.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\texture.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\util.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\vertprog.cpp">
+      <Filter>d3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\errorshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\hktoonshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\layeredlmapshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\layeredshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\lightmapshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\pointspriteshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\projectedtextureshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\reflectshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\shader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\shaderdata.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\shadersetup.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\simpleshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\dx8\shaders\toonshader.cpp">
+      <Filter>d3d\shaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\pddi\dx8\vsh\projtex.vsh">
+      <Filter>d3d\vsh</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\pddi\dx8\vsh\util.vsh">
+      <Filter>d3d\vsh</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\pddi\dx8\pddidx8.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\pddi\dx8\vsh\skin.vsh">
+      <Filter>d3d\vsh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\pddi\dx8\vsh\skin_hktoon.vsh">
+      <Filter>d3d\vsh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\pddi\dx8\vsh\skin_onebone.vsh">
+      <Filter>d3d\vsh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\pddi\dx8\vsh\skin_onebone_hktoon.vsh">
+      <Filter>d3d\vsh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\pddi\dx8\psh\hktoonshader.psh">
+      <Filter>d3d\psh</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

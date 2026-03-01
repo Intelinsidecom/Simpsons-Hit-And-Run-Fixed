@@ -1,0 +1,55 @@
+﻿  animation.cpp
+  bank.cpp
+  basebank.cpp
+  blend.cpp
+  blendtemplate.cpp
+  constants.cpp
+  driver.cpp
+  engine.cpp
+  foot.cpp
+  footblenddriver.cpp
+  footblender.cpp
+  footplanter.cpp
+  internalanimation.cpp
+  jointblenddriver.cpp
+  jointblender.cpp
+  load.cpp
+..\..\src\load.cpp(528): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(562): note: see declaration of 'strcmpi'
+..\..\src\load.cpp(537): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(562): note: see declaration of 'strcmpi'
+  locomotion.cpp
+  partition.cpp
+  puppet.cpp
+..\..\src\puppet.cpp(1078): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+..\..\src\puppet.cpp(1079): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  replay.cpp
+  Generating Code...
+  Compiling...
+  replayblenddriver.cpp
+  replayblender.cpp
+  rig.cpp
+  root.cpp
+  rootblenddriver.cpp
+  rootblender.cpp
+  scriptreader.cpp
+  scriptwriter.cpp
+..\..\src\scriptwriter.cpp(82): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+..\..\src\scriptwriter.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  synchronization.cpp
+  transition.cpp
+  utility.cpp
+..\..\src\utility.cpp(120): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1396): note: see declaration of '_vsnprintf'
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\choreo\build\win32\.\tune\choreo.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\choreo\lib\choreowt.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(choreo) does not match the Library's OutputFile property value (choreowt). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+rootblenddriver.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+replayblenddriver.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+jointblenddriver.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+footblenddriver.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+driver.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+blendtemplate.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  choreo.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\choreo\build\win32\.\tune\choreo.lib

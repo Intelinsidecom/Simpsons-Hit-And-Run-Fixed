@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{103e159e-9a37-47df-a831-c78e09dad7bd}</UniqueIdentifier>
+      <Extensions>*.cpp, *.c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{50254c87-1ca4-496d-a325-cb6b5272793c}</UniqueIdentifier>
+      <Extensions>*.hpp, *.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="p3dlight.sc" />
+  </ItemGroup>
+</Project>

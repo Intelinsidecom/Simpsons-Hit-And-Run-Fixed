@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{a050f466-5023-4d1d-8d6c-0a6d9b341490}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="mel">
+      <UniqueIdentifier>{875b4f61-3797-4cdc-aa0b-15e5b4cd56aa}</UniqueIdentifier>
+      <Extensions>mel</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f39bc027-19fb-4444-8cdb-315eaca7c248}</UniqueIdentifier>
+      <Extensions>c;cpp</Extensions>
+    </Filter>
+    <Filter Include="viewer">
+      <UniqueIdentifier>{9975a497-8f27-4d1f-80fc-b376ff24e956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{a48cf384-901b-43d4-b035-3632713f2a6e}</UniqueIdentifier>
+      <Extensions>*.bat</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\ExportLog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\animOptimization.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\animRange.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\animnode.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\billboardObject.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\boundingvolumes.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\deformerExpression.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\exportFunctions.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\exporteroptions.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\exporterutility.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\fileAttrib.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\iffreader.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\iffwriter.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\inventoryEntity.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\launchProcess.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\materialgui.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\materialprocess.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\maya\common\inc\mayaResolveName.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mayanodes.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\meshprocess.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\opticEffects.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dEventAnim.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dEventKey.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dExportSceneCmd.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dTagsCallback.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dexp.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\p3dmayaexp.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\particleAnimNode.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\particleSystem.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\plugValue.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\quickexporter.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\quickviewer.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\scene.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\scenegraph.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\set.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\shaderAnimNode.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\textureprocess.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\transformgui.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\transformmatrix.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\traversalcontroller.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\vertexAnimationAnimNode.hpp">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\p3dview\code\quickview\quickview.hpp">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="p3dres.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="copyhybridmll40.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="copyreleasemll40.bat">
+      <Filter>Build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ExportLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\animOptimization.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\animRange.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\animnode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\billboardObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\boundingvolumes.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\deformerExpression.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exportFunctions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exporteroptions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exporterutility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fileAttrib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iffreader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iffwriter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\launchProcess.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\materialgui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\materialprocess.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\maya\common\src\mayaResolveName.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\meshprocess.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opticEffects.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3dEventAnim.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3dEventKey.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3dExportSceneCmd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3dTagsCallback.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3dmayaexp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\particleAnimNode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\particleSystem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quickexporter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quickviewer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenegraph.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\set.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shaderAnimNode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\textureprocess.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\transformgui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\transformmatrix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\traversalcontroller.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vertexAnimationAnimNode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\p3dview\code\quickview\quickview.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="P3dexp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mel\AEblinnP3dRevision.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AElambertP3dRevision.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dAnimationOptimizationTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dEventAnimTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dExportSettingNodeTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dExporterOptionsShapeTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dLightCommon.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\plugins\maya\p3dBoundingVolume\mel\AEp3dPhysicsTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dRenderStatsTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dShapeTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dVertexAnimationTemplate.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEphongP3dRevision.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEtransformP3dRevision.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\animChannelTable.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\animRangePanel.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\plugins\maya\common\mel\p3dFrameLayout.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMatAttr.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMayaExporterInstall.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMayaExporterTools.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dRemapAttr.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dexpoptsgui.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dtags.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mel\viewLog.mel">
+      <Filter>mel</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="interface">
+      <UniqueIdentifier>{4c5342e5-4226-4059-9830-460857171c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{9b3363ed-89c3-4f51-ae4f-addd4020df09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gl">
+      <UniqueIdentifier>{434822f9-2426-44b3-95ed-229b6cd28b18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\pddi\Pddi.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\Pddienum.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\Pddiwin32.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddiext.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddilinux.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddipc.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddips2.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddishade.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pdditype.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\pddixbox.hpp">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\Font.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\basecontext.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\baseshader.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\basetype.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\base\romans.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\display_win32\gl.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\glcon.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\gldev.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\display_win32\gldisplay.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\glmat.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\pddi\gl\gltex.hpp">
+      <Filter>gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pddi\base\basecontext.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\baseshader.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\font.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\base\pddiobj.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\gl\glcon.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\gl\gldev.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\gl\display_win32\gldisplay.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\gl\glmat.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\pddi\gl\gltex.cpp">
+      <Filter>gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\pddi\gl\display_win32\pddigl.rc" />
+  </ItemGroup>
+</Project>

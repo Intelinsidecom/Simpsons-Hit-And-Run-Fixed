@@ -1,0 +1,35 @@
+﻿  main.cpp
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(9): error C2039: 'filesystem': is not a member of 'std'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\iomanip(18): note: see declaration of 'std'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(9): error C2878: 'filesystem': a namespace or class of this name does not exist
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(39): error C2653: 'fs': is not a class or namespace name
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(39): error C2143: syntax error: missing ',' before '&'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(40): error C2664: 'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::basic_ifstream<char,std::char_traits<char>> &)': cannot convert argument 1 from 'const int' to 'const char *'
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(40): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(124): error C2653: 'fs': is not a class or namespace name
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(124): error C3861: 'exists': identifier not found
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(133): error C2653: 'fs': is not a class or namespace name
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(133): error C3861: 'recursive_directory_iterator': identifier not found
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(133): error C3312: no callable 'begin' function found for type 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(133): error C3312: no callable 'end' function found for type 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): error C2065: 'entry': undeclared identifier
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): error C2228: left of '.is_regular_file' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): error C2228: left of '.path' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(134): error C2228: left of '.extension' must have class/struct/union
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(135): error C2065: 'entry': undeclared identifier
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(135): error C2228: left of '.path' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(135): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(149): error C2059: syntax error: '['
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(149): error C2143: syntax error: missing ';' before '{'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): error C2065: 'meta': undeclared identifier
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): error C2228: left of '.name' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): error C2228: left of '.classType' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): error C2228: left of '.physPropId' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): note: type is 'unknown-type'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): error C2228: left of '.sound' must have class/struct/union
+  g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(150): note: type is 'unknown-type'

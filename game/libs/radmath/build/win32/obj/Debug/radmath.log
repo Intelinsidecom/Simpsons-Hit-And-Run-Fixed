@@ -1,0 +1,14 @@
+﻿  matrix.cpp
+  numerical.cpp
+  plane.cpp
+  quaternion.cpp
+  radmath.cpp
+  random.cpp
+  spline.cpp
+  triangle.cpp
+  trig.cpp
+  vector.cpp
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmath\build\win32\.\obj\Debug\radmath.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmath\lib\radmathwd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(radmath) does not match the Library's OutputFile property value (radmathwd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  radmath.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmath\build\win32\.\obj\Debug\radmath.lib

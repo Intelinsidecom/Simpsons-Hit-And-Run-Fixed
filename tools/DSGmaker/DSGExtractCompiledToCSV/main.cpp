@@ -1,0 +1,815 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <map>
+#include <iomanip>
+#include <sys/stat.h>
+#include <cstdio>
+
+#ifdef _WIN32
+#include <windows.h>
+#include <tchar.h>
+#include <strsafe.h>
+#else
+#include <dirent.h>
+#endif
+
+// Pure3D chunk IDs from the actual source
+namespace Pure3D {
+    namespace Mesh {
+        const unsigned int MESH = 0x10000;  // Fixed: was 0x10002, should be 0x10000
+    }
+    namespace Simulation {
+        namespace Collision {
+            const unsigned int OBJECT = 0x07010000;
+            const unsigned int ATTRIBUTE = 0x07010023;
+        }
+        namespace Physics {
+            const unsigned int OBJECT = 0x07011000;
+        }
+    }
+}
+
+namespace SRR2 {
+    namespace ChunkID {
+        // Object Attribute chunks
+        const unsigned int OBJECT_ATTRIBUTES = 0x03000600;
+        const unsigned int PHYS_WRAPPER = 0x03000601;
+        const unsigned int ATTRIBUTE_TABLE = 0x03000602;
+        
+        // DSG chunk id's (compiled versions have different IDs)
+        const unsigned int ENTITY_DSG = 0x03f00000;
+        const unsigned int STATIC_PHYS_DSG = 0x03f00001;
+        const unsigned int DYNA_PHYS_DSG = 0x03f00002;
+        const unsigned int INTERSECT_DSG = 0x03f00003;
+        const unsigned int TREE_DSG = 0x03f00004;
+        const unsigned int CONTIGUOUS_BIN_NODE = 0x03f00005;
+        const unsigned int SPATIAL_NODE = 0x03f00006;
+        const unsigned int FENCE_DSG = 0x03f00007;
+        const unsigned int ANIM_COLL_DSG = 0x03f00008;
+        const unsigned int INSTA_ENTITY_DSG = 0x03f00009;
+        const unsigned int INSTA_STATIC_PHYS_DSG = 0x03f0000A;
+        const unsigned int WORLD_SPHERE_DSG = 0x03f0000B;
+        const unsigned int ANIM_DSG = 0x03f0000C;
+        const unsigned int LENS_FLARE_DSG = 0x03f0000D;
+        const unsigned int INSTA_ANIM_DYNA_PHYS_DSG = 0x03f0000E;
+        const unsigned int ANIM_DSG_WRAPPER = 0x03f0000F;
+        const unsigned int ANIM_OBJ_DSG_WRAPPER = 0x03f00010;
+    }
+}
+
+// Replicate the rootname function from the original DSGMaker
+unsigned int rootname(const char* input, char* output) {
+    char source_name[64];
+    char object_name1[64];
+    char object_name2[64];
+    char* token = NULL;
+    char* context = NULL;
+    
+    // Get the name of collision object
+    strcpy_s(source_name, sizeof(source_name), input);
+    
+    // Smash up string to remove the number appended by Maya
+    token = strtok_s(source_name, "_", &context);
+    strcpy_s(object_name1, sizeof(object_name1), token);
+    
+    // Look for second token
+    token = strtok_s(NULL, "_", &context);
+    
+    if (token != NULL) {
+        // Only add underscore if we have a second token
+        strcat_s(object_name1, sizeof(object_name1), "_");
+        strcpy_s(object_name2, sizeof(object_name2), token);
+        strcat_s(object_name1, sizeof(object_name1), object_name2);
+    }
+    
+    // Set default values
+    strcpy_s(output, 64, object_name1);
+    return 0;
+}
+
+// New function to keep full name for physics objects (including _Shape suffix)
+unsigned int fullname(const char* input, char* output) {
+    // Just copy the full name, but remove trailing numbers if any
+    strcpy_s(output, 64, input);
+    
+    // Remove trailing digits (Maya numbering)
+    int len = strlen(output);
+    while (len > 0 && isdigit(output[len - 1])) {
+        output[len - 1] = '\0';
+        len--;
+    }
+    
+    return 0;
+}
+
+class LegacyFileSystem {
+public:
+    static bool exists(const std::string& path) {
+#ifdef _WIN32
+        DWORD attrs = GetFileAttributesA(path.c_str());
+        return (attrs != INVALID_FILE_ATTRIBUTES && !(attrs & FILE_ATTRIBUTE_DIRECTORY));
+#else
+        struct stat buffer;
+        return (stat(path.c_str(), &buffer) == 0);
+#endif
+    }
+    
+    static bool is_directory(const std::string& path) {
+#ifdef _WIN32
+        DWORD attrs = GetFileAttributesA(path.c_str());
+        return (attrs != INVALID_FILE_ATTRIBUTES && (attrs & FILE_ATTRIBUTE_DIRECTORY));
+#else
+        struct stat buffer;
+        return (stat(path.c_str(), &buffer) == 0 && S_ISDIR(buffer.st_mode));
+#endif
+    }
+    
+    static std::string get_extension(const std::string& filename) {
+        size_t dotPos = filename.find_last_of('.');
+        if (dotPos != std::string::npos && dotPos < filename.length() - 1) {
+            return filename.substr(dotPos);
+        }
+        return "";
+    }
+    
+    static std::string get_filename(const std::string& path) {
+        size_t slashPos = path.find_last_of("\\/");
+        if (slashPos != std::string::npos && slashPos < path.length() - 1) {
+            return path.substr(slashPos + 1);
+        }
+        return path;
+    }
+    
+    static std::string join_path(const std::string& base, const std::string& relative) {
+        if (base.empty()) return relative;
+        if (relative.empty()) return base;
+        
+        char lastChar = base[base.length() - 1];
+        if (lastChar == '\\' || lastChar == '/') {
+            return base + relative;
+        }
+        return base + "\\" + relative;
+    }
+    
+    class DirectoryIterator {
+    private:
+        std::string basePath;
+        std::vector<std::string> files;
+        size_t currentIndex;
+        bool isRecursive;
+        
+        void scanDirectory(const std::string& path, bool recursive) {
+#ifdef _WIN32
+            WIN32_FIND_DATAA findData;
+            HANDLE hFind = INVALID_HANDLE_VALUE;
+            
+            std::string searchPath = path + "\\*";
+            hFind = FindFirstFileA(searchPath.c_str(), &findData);
+            
+            if (hFind != INVALID_HANDLE_VALUE) {
+                do {
+                    std::string fileName = findData.cFileName;
+                    if (fileName != "." && fileName != "..") {
+                        std::string fullPath = join_path(path, fileName);
+                        files.push_back(fullPath);
+                        
+                        if (recursive && (findData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)) {
+                            scanDirectory(fullPath, true);
+                        }
+                    }
+                } while (FindNextFileA(hFind, &findData) != 0);
+                FindClose(hFind);
+            }
+#else
+            DIR* dir = opendir(path.c_str());
+            if (dir) {
+                struct dirent* entry;
+                while ((entry = readdir(dir)) != NULL) {
+                    std::string fileName = entry->d_name;
+                    if (fileName != "." && fileName != "..") {
+                        std::string fullPath = join_path(path, fileName);
+                        files.push_back(fullPath);
+                        
+                        if (recursive && entry->d_type == DT_DIR) {
+                            scanDirectory(fullPath, true);
+                        }
+                    }
+                }
+                closedir(dir);
+            }
+#endif
+        }
+        
+    public:
+        DirectoryIterator(const std::string& path, bool recursive = false) 
+            : basePath(path), currentIndex(0), isRecursive(recursive) {
+            scanDirectory(path, recursive);
+        }
+        
+        class Entry {
+        private:
+            std::string fullPath;
+            
+        public:
+            Entry(const std::string& path) : fullPath(path) {}
+            
+            bool is_regular_file() const {
+                return !LegacyFileSystem::is_directory(fullPath);
+            }
+            
+            std::string path() const {
+                return fullPath;
+            }
+        };
+        
+        bool has_next() const {
+            return currentIndex < files.size();
+        }
+        
+        Entry next() {
+            return Entry(files[currentIndex++]);
+        }
+        
+        class Iterator {
+        private:
+            DirectoryIterator* parent;
+            size_t index;
+            
+        public:
+            Iterator(DirectoryIterator* p, size_t idx) : parent(p), index(idx) {}
+            
+            Entry operator*() const {
+                return Entry(parent->files[index]);
+            }
+            
+            Iterator& operator++() {
+                ++index;
+                return *this;
+            }
+            
+            bool operator!=(const Iterator& other) const {
+                return index != other.index;
+            }
+        };
+        
+        Iterator begin() {
+            return Iterator(this, 0);
+        }
+        
+        Iterator end() {
+            return Iterator(this, files.size());
+        }
+    };
+    
+    static DirectoryIterator recursive_directory_iterator(const std::string& path) {
+        return DirectoryIterator(path, true);
+    }
+};
+
+using fs = LegacyFileSystem;
+
+struct ObjectMetadata {
+    std::string name;
+    unsigned int classType;
+    unsigned int physPropId;
+    std::string sound;
+};
+
+std::string MapClassType(unsigned int type) {
+    switch (type) {
+        case 2: return "PROP_STATIC";
+        case 3: return "PROP_MOVEABLE";
+        case 4: return "PROP_BREAKABLE";
+        case 5: return "ANIMATED_BV";
+        case 7: return "STATIC";
+        case 9: return "PROP_ANIM_BREAKABLE";
+        case 10: return "PROP_ONETIME_MOVEABLE";
+        default: return "UNKNOWN_" + std::to_string(type);
+    }
+}
+
+class P3DParser {
+public:
+    std::map<std::string, ObjectMetadata> extractedDataMap;
+    std::map<unsigned int, int> foundChunks;
+    std::map<std::string, unsigned int> physicsPropertiesMap; // Store physics properties for matching
+
+    void ParseFile(const std::string& filePath) {
+        std::ifstream file(filePath, std::ios::binary);
+        if (!file.is_open()) return;
+
+        file.seekg(0, std::ios::end);
+        size_t fileSize = file.tellg();
+        file.seekg(0, std::ios::beg);
+
+        std::vector<char> buffer(fileSize);
+        file.read(buffer.data(), fileSize);
+        file.close();
+
+        ParseChunks(buffer.data(), 0, fileSize, std::string());
+    }
+
+private:
+    void ParseChunks(const char* data, size_t offset, size_t end, const std::string& contextName) {
+        while (offset + 12 <= end) {
+            unsigned int id = *(unsigned int*)(data + offset);
+            unsigned int dataSize = *(unsigned int*)(data + offset + 4);
+            unsigned int totalSize = *(unsigned int*)(data + offset + 8);
+
+            if (totalSize == 0 || offset + totalSize > end) break;
+
+            foundChunks[id]++;
+
+            std::string nextContextName = contextName;
+
+            // Look for mesh chunks - these contain the actual object names
+            if (id == Pure3D::Mesh::MESH) {
+                ExtractMeshInfo(data + offset + 12, dataSize - 12);
+            }
+            // Look for collision objects - these contain object names
+            else if (id == Pure3D::Simulation::Collision::OBJECT) {
+                nextContextName = ExtractCollisionObject(data + offset + 12, dataSize - 12);
+            }
+            // Look for collision attributes
+            else if (id == Pure3D::Simulation::Collision::ATTRIBUTE) {
+                ExtractCollisionAttributes(data + offset + 12, dataSize - 12);
+            }
+            // Look for physics objects
+            else if (id == Pure3D::Simulation::Physics::OBJECT) {
+                nextContextName = ExtractPhysicsObject(data + offset + 12, dataSize - 12);
+            }
+            // Look for physics properties - these might contain physpropid mappings
+            else if (id == 0x8020002) {
+                ExtractPhysicsProperties(data + offset + 12, dataSize - 12);
+            }
+            // Object Attribute chunks (both original and compiled P3D versions)
+            // Only process if it's the actual OBJECT_ATTRIBUTES chunk, not look-alike chunks
+            else if (id == SRR2::ChunkID::OBJECT_ATTRIBUTES) {
+                ExtractObjectAttributes(data + offset + 12, dataSize - 12, contextName);
+            }
+            // PC compiled P3D files use different chunk IDs for collision objects
+            else if (id == 0x7010007) {
+                nextContextName = ExtractCollisionObject(data + offset + 12, dataSize - 12);
+            }
+
+            // Recurse into subchunks if any
+            if (totalSize > dataSize) {
+                ParseChunks(data, offset + dataSize, offset + totalSize, nextContextName);
+            }
+
+            offset += totalSize;
+        }
+    }
+
+    void ExtractMeshInfo(const char* data, size_t size) {
+        // Pure3D mesh chunks use Pascal strings: 1-byte length + string data
+        // Based on tlMeshChunk.cpp line 49: f->GetPString(buf);
+        if (size < 1) return;
+        
+        // Read 1-byte length prefix
+        unsigned char nameLen = (unsigned char)data[0];
+        if (nameLen > 0 && nameLen < 64 && 1 + nameLen <= size) {
+            std::string meshName(data + 1, nameLen);
+            
+            // Check if it looks like a valid name (printable ASCII)
+            bool validName = true;
+            for (char c : meshName) {
+                if (c < 32 || c > 126) {
+                    validName = false;
+                    break;
+                }
+            }
+            
+            if (validName && meshName.length() >= 3) {
+                char cleanName[64];
+                rootname(meshName.c_str(), cleanName);
+                
+                std::string name(cleanName);
+                if (name.length() >= 3) {
+                    std::cout << "Found mesh: " << meshName << " -> " << name << std::endl;
+                    ObjectMetadata meta;
+                    meta.name = name;
+                    meta.classType = 7; // Default to STATIC
+                    meta.physPropId = 0;
+                    meta.sound = "";
+                    extractedDataMap[name] = meta;
+
+                    // Also add the full mesh name (including _Shape) as a separate entry
+                    // This helps debug mismatches with instance/physics/collision chunks
+                    if (meshName != name) {
+                        ObjectMetadata fullMeta;
+                        fullMeta.name = meshName;
+                        fullMeta.classType = 7; // Default to STATIC
+                        fullMeta.physPropId = 0;
+                        fullMeta.sound = "";
+                        extractedDataMap[meshName] = fullMeta;
+                    }
+
+                    return;
+                }
+            }
+        }
+    }
+
+    void ExtractObjectAttributes(const char* data, size_t size, const std::string& contextName) {
+        // Object attributes contain class type, physics properties, and sound
+        // Structure: ClassType(4) + PhyPropID(4) + Sound(Pascal string)
+        if (size < 9) { // Minimum: 4+4+1 (length byte)
+            return;
+        }
+        
+        unsigned int classType = *(unsigned int*)(data);
+        unsigned int physPropId = *(unsigned int*)(data + 4);
+        
+        // Read Sound field as Pascal string (starts at offset 8)
+        size_t offset = 8;
+        std::string sound = "";
+        if (offset < size) {
+            unsigned char soundLen = (unsigned char)data[offset++];
+            if (soundLen > 0 && soundLen < 256 && offset + soundLen <= size) {
+                // Create string from sound data, stopping at first null or at soundLen
+                std::string soundData(data + offset, soundLen);
+                size_t actualLen = 0;
+                for (size_t i = 0; i < soundLen && actualLen < soundLen; i++) {
+                    if (soundData[i] == '\0') break;
+                    actualLen++;
+                }
+                sound = std::string(soundData.c_str(), actualLen);
+            }
+        }
+        
+        // OBJECT_ATTRIBUTES do not store names; they must be associated with the surrounding object.
+        if (contextName.empty()) {
+            return;
+        }
+
+        if (extractedDataMap.find(contextName) == extractedDataMap.end()) {
+            ObjectMetadata meta;
+            meta.name = contextName;
+            meta.classType = classType;
+            meta.physPropId = physPropId;
+            meta.sound = sound;
+            extractedDataMap[contextName] = meta;
+        } else {
+            extractedDataMap[contextName].classType = classType;
+            extractedDataMap[contextName].physPropId = physPropId;
+            extractedDataMap[contextName].sound = sound;
+        }
+    }
+
+    std::string ExtractCollisionObject(const char* data, size_t size) {
+        // Pure3D collision object structure:
+        // - Pascal string (name)
+        // - 4-byte version
+        // - Pascal string (stringdata)
+        // - 4-byte numsubobject
+        // - 4-byte numowner
+        if (size < 1) return std::string();
+        
+        size_t offset = 0;
+        
+        // Read name (Pascal string)
+        if (offset >= size) return std::string();
+        unsigned char nameLen = (unsigned char)data[offset++];
+        if (nameLen > 0 && nameLen < 64 && offset + nameLen <= size) {
+            std::string objectName(data + offset, nameLen);
+            offset += nameLen;
+            
+            // Check if it looks like a valid name
+            bool validName = true;
+            for (char c : objectName) {
+                if (c < 32 || c > 126) {
+                    validName = false;
+                    break;
+                }
+            }
+            
+            if (validName && objectName.length() >= 3) {
+                // Apply rootname function
+                char cleanName[64];
+                rootname(objectName.c_str(), cleanName);
+                
+                std::string name(cleanName);
+                if (name.length() >= 3) {
+                    std::cout << "Found collision object: " << objectName << " -> " << name << std::endl;
+                    ObjectMetadata meta;
+                    meta.name = name;
+                    meta.classType = 7; // Default to STATIC for collision objects
+                    meta.physPropId = 0;
+                    meta.sound = "";
+                    
+                    // Update existing entry or add new one
+                    if (extractedDataMap.find(name) != extractedDataMap.end()) {
+                        extractedDataMap[name].name = name;
+                    } else {
+                        extractedDataMap[name] = meta;
+                    }
+
+                    return name;
+                }
+            }
+        }
+
+        return std::string();
+    }
+
+    void ExtractCollisionAttributes(const char* data, size_t size) {
+        // Collision attributes might contain physics properties
+        if (size < 8) return;
+        
+        // Try to extract object name and physics properties
+        // Look for Pascal string at the beginning
+        if (size < 1) return;
+        unsigned char nameLen = (unsigned char)data[0];
+        if (nameLen > 0 && nameLen < 64 && 1 + nameLen + 8 <= size) {
+            std::string objectName(data + 1, nameLen);
+            
+            // Check if it looks like a valid name
+            bool validName = true;
+            for (char c : objectName) {
+                if (c < 32 || c > 126) {
+                    validName = false;
+                    break;
+                }
+            }
+            
+            if (validName && objectName.length() >= 3) {
+                // Extract physics properties (assuming they follow the name)
+                size_t offset = 1 + nameLen;
+                unsigned int physPropId = *(unsigned int*)(data + offset);
+                
+                // Apply rootname function
+                char cleanName[64];
+                rootname(objectName.c_str(), cleanName);
+                
+                std::string name(cleanName);
+                if (name.length() >= 3) {
+                    std::cout << "Found collision attribute: " << objectName << " -> " << name 
+                             << " (phys=" << physPropId << ")" << std::endl;
+                    
+                    // Update existing entry
+                    if (extractedDataMap.find(name) != extractedDataMap.end()) {
+                        extractedDataMap[name].physPropId = physPropId;
+                    }
+                }
+            }
+        }
+    }
+
+    std::string ExtractPhysicsObject(const char* data, size_t size) {
+        // Pure3D physics object structure:
+        // - Pascal string (name)
+        // - 4-byte version
+        // - Pascal string (stringdata) - might contain sound info
+        // - 4-byte numjoints
+        // - 4-byte volume (float)
+        // - 4-byte restingsensitivity (float)
+        if (size < 1) return std::string();
+        
+        size_t offset = 0;
+        
+        // Read name (Pascal string)
+        if (offset >= size) return std::string();
+        unsigned char nameLen = (unsigned char)data[offset++];
+        if (nameLen > 0 && nameLen < 64 && offset + nameLen <= size) {
+            std::string objectName(data + offset, nameLen);
+            offset += nameLen;
+            
+            // Skip version (4 bytes)
+            offset += 4;
+            if (offset >= size) return std::string();
+            
+            // Read stringdata (Pascal string) - this might contain sound info
+            unsigned char stringDataLen = (unsigned char)data[offset++];
+            std::string stringData = "";
+            if (stringDataLen > 0 && stringDataLen < 256 && offset + stringDataLen <= size) {
+                stringData = std::string(data + offset, stringDataLen);
+                offset += stringDataLen;
+            }
+            
+            // Check if object name is valid
+            bool validName = true;
+            for (char c : objectName) {
+                if (c < 32 || c > 126) {
+                    validName = false;
+                    break;
+                }
+            }
+            
+            if (validName && objectName.length() >= 3) {
+                // Normalize with rootname to match DSGmaker metadata lookup
+                char cleanName[64];
+                rootname(objectName.c_str(), cleanName);
+                
+                std::string name(cleanName);
+                
+                if (name.length() >= 3) {
+                    std::cout << "Found physics object: " << objectName << " -> " << name 
+                             << " (data: '" << stringData << "')" << std::endl;
+                    
+                    ObjectMetadata meta;
+                    meta.name = name;
+                    meta.classType = 3; // Default to MOVEABLE for physics objects
+                    meta.physPropId = 0;
+                    meta.sound = stringData; // Use stringdata as sound field
+                    
+                    if (extractedDataMap.find(name) == extractedDataMap.end()) {
+                        extractedDataMap[name] = meta;
+                    } else {
+                        // Update existing entry with sound data
+                        extractedDataMap[name].sound = stringData;
+                    }
+
+                    return name;
+                }
+            }
+        }
+
+        return std::string();
+    }
+
+    void ExtractPhysicsProperties(const char* data, size_t size) {
+        // Physics properties contain object name + physpropid pairs
+        // These need to be matched with collision objects using rootname
+        
+        if (size < 8) return;
+        
+        // Try to find object name + physpropid pairs
+        // Look for Pascal strings followed by integer values
+        size_t offset = 0;
+        while (offset < size - 1) {
+            // Look for Pascal string (object name)
+            if (offset >= size) break;
+            unsigned char nameLen = (unsigned char)data[offset++];
+            if (nameLen > 0 && nameLen < 64 && offset + nameLen <= size) {
+                std::string objectName(data + offset, nameLen);
+                offset += nameLen;
+                
+                // Check if it's a valid name
+                bool validName = true;
+                for (char c : objectName) {
+                    if (c < 32 || c > 126) {
+                        validName = false;
+                        break;
+                    }
+                }
+                
+                if (validName && objectName.length() >= 3) {
+                    // Look for integer value after the name
+                    if (offset + 4 <= size) {
+                        unsigned int physPropId = *(unsigned int*)(data + offset);
+                        
+                        // Apply rootname function to match collision objects
+                        char cleanName[64];
+                        rootname(objectName.c_str(), cleanName);
+                        
+                        std::string name(cleanName);
+                        if (name.length() >= 3) {
+                            std::cout << "Found physics property: " << objectName << " -> " << name 
+                                     << " (physpropid=" << physPropId << ")" << std::endl;
+                            
+                            // Store physics properties in a separate map for later matching
+                            physicsPropertiesMap[name] = physPropId;
+                        }
+                        
+                        offset += 4; // Skip the integer
+                    }
+                }
+            } else {
+                offset++; // Skip to next byte if not a valid string
+            }
+        }
+    }
+
+    void ExtractPhysicsWrapper(const char* data, size_t size) {
+        // Physics wrappers might contain additional object info
+        if (size < 8) return;
+        
+        // Look for object name in physics wrapper
+        for (size_t i = 0; i < size - 1; i++) {
+            if (data[i] == 0 && i > 0) {
+                std::string name(data, i);
+                if (name.length() >= 3 && name.length() < 64) {
+                    // Apply rootname function
+                    char cleanName[64];
+                    rootname(name.c_str(), cleanName);
+                    
+                    std::string finalName(cleanName);
+                    if (finalName.length() >= 3) {
+                        ObjectMetadata meta;
+                        meta.name = finalName;
+                        meta.classType = 3; // Default to MOVEABLE for physics objects
+                        meta.physPropId = 0;
+                        meta.sound = "";
+                        
+                        if (extractedDataMap.find(finalName) == extractedDataMap.end()) {
+                            extractedDataMap[finalName] = meta;
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+    }
+};
+
+int main(int argc, char* argv[]) {
+    std::cout << "DSG Metadata Extractor - Based on actual DSGMaker logic" << std::endl;
+    std::cout << "---------------------------------------------------------" << std::endl;
+
+    if (argc < 2) {
+        std::cout << "Usage: extractor.exe <art directory or file>" << std::endl;
+        return 0;
+    }
+
+    std::string searchPath = argv[1];
+    bool isFile = false;
+    
+    if (fs::exists(searchPath) && !fs::is_directory(searchPath)) {
+        isFile = true;
+    } else if (!fs::is_directory(searchPath)) {
+        std::cerr << "Error: Path does not exist: " << searchPath << std::endl;
+        return 1;
+    }
+
+    P3DParser parser;
+    int fileCount = 0;
+    
+    if (isFile) {
+        std::cout << "Processing file: " << searchPath << std::endl;
+        if (fs::get_extension(searchPath) == ".p3d") {
+            parser.ParseFile(searchPath);
+            fileCount = 1;
+        } else {
+            std::cerr << "Error: Not a P3D file: " << searchPath << std::endl;
+            return 1;
+        }
+    } else {
+        std::cout << "Scanning directory: " << searchPath << std::endl;
+        for (const auto& entry : fs::recursive_directory_iterator(searchPath)) {
+            if (entry.is_regular_file() && fs::get_extension(entry.path()) == ".p3d") {
+                parser.ParseFile(entry.path());
+                fileCount++;
+                if (fileCount % 10 == 0) std::cout << "." << std::flush;
+            }
+        }
+        std::cout << std::endl;
+    }
+
+    // Show chunk statistics
+    std::cout << "\nFound chunk types:" << std::endl;
+    for (auto const& pair : parser.foundChunks) {
+        if (pair.second > 0) {
+            std::cout << "0x" << std::hex << pair.first << std::dec << " (" << pair.first << "): " << pair.second << " times" << std::endl;
+        }
+    }
+
+    if (parser.extractedDataMap.empty()) {
+        std::cout << "\nNo DSG metadata found in " << fileCount << " files." << std::endl;
+        return 0;
+    }
+
+    // Create a combined map of all objects (collision objects + physics properties)
+    std::map<std::string, ObjectMetadata> allObjects;
+    
+    // Add collision objects
+    for (auto const& pair : parser.extractedDataMap) {
+        allObjects[pair.first] = pair.second;
+    }
+    
+    // Add physics-only objects (objects that have physics properties but no collision object)
+    for (auto const& pair : parser.physicsPropertiesMap) {
+        const std::string& name = pair.first;
+        unsigned int physPropId = pair.second;
+        
+        // Only add if not already in the map
+        if (allObjects.find(name) == allObjects.end()) {
+            ObjectMetadata meta;
+            meta.name = name;
+            meta.classType = 7; // Default to STATIC for physics-only objects
+            meta.physPropId = physPropId;
+            meta.sound = "";
+            allObjects[name] = meta;
+        } else {
+            // Update existing object with physics property
+            allObjects[name].physPropId = physPropId;
+        }
+    }
+
+    std::ofstream csv("dsg_metadata.csv");
+    csv << "name,ClassType,physpropid,Sound\n";
+    for (auto const& pair : allObjects) {
+        const std::string& name = pair.first;
+        const ObjectMetadata& meta = pair.second;
+        
+        csv << meta.name << "," << MapClassType(meta.classType) << "," << meta.physPropId << "," << meta.sound << "\n";
+    }
+    csv.close();
+
+    std::cout << "Processed " << fileCount << " files." << std::endl;
+    std::cout << "Successfully extracted " << allObjects.size() << " unique entries to dsg_metadata.csv" << std::endl;
+
+    return 0;
+}

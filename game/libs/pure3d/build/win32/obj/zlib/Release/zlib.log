@@ -1,0 +1,28 @@
+﻿  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzio.c
+..\..\lib\zlib\gzio.c(108): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\..\lib\zlib\gzio.c(156): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+..\..\lib\zlib\gzio.c(201): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+..\..\lib\zlib\gzio.c(535): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+..\..\lib\zlib\gzio.c(871): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\..\lib\zlib\gzio.c(872): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+..\..\lib\zlib\gzio.c(873): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  infblock.c
+  infcodes.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  infutil.c
+  trees.c
+  uncompr.c
+  zutil.c
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\build\win32\.\obj\zlib\Release\zlib.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\build\lib\zlibwr.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(zlib) does not match the Library's OutputFile property value (zlibwr). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  zlib.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\build\win32\.\obj\zlib\Release\zlib.lib

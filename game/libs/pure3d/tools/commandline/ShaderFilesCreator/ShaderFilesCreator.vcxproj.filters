@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8a1a87ec-451f-49b0-b844-f9303aa9bcb0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2e2cebdc-ecfc-4025-ac47-879b201b33da}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="SchemaParser">
+      <UniqueIdentifier>{64193af5-6095-4339-9621-13218e28e73b}</UniqueIdentifier>
+      <Extensions>cpp;hpp;c;h</Extensions>
+    </Filter>
+    <Filter Include="SchemaParser\meta">
+      <UniqueIdentifier>{c96c5df0-9cd3-4fd7-97d3-e6af43dd7510}</UniqueIdentifier>
+      <Extensions>l;y</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{fe9c9ae0-e960-42ed-b3fb-def81ae14bed}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\toollib\src\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\toollib\src\getopt1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\coder\schemaparse\construct.cpp">
+      <Filter>SchemaParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\coder\schemaparse\schema.tab.c">
+      <Filter>SchemaParser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\toollib\inc\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\coder\schemaparse\construct.h">
+      <Filter>SchemaParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\coder\schemaparse\schemaparse.hpp">
+      <Filter>SchemaParser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="header_cpp.tpl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\coder\schemaparse\schema.l">
+      <Filter>SchemaParser\meta</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\coder\schemaparse\schema.y">
+      <Filter>SchemaParser\meta</Filter>
+    </CustomBuild>
+    <CustomBuild Include="shader_hpp_cpp.tpl" />
+  </ItemGroup>
+</Project>

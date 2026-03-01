@@ -1,0 +1,14 @@
+﻿  pch.cpp
+  binkmovieplayer.cpp
+g:\newfolder\shr\simpsonshitrun\game\libs\radmovie\src\common\binkmovieplayer.hpp(54): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\newfolder\shr\simpsonshitrun\game\libs\radsound\src\hal\win32\system.hpp(37): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  binkradfile.cpp
+  binkrenderstrategy.cpp
+g:\newfolder\shr\simpsonshitrun\game\libs\radmovie\src\common\binkrenderstrategy.hpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\build\win32\.\Tools Debug\radmovie.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\lib\radmoviewtd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(radmovie) does not match the Library's OutputFile property value (radmoviewtd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  radmovie.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\build\win32\.\Tools Debug\radmovie.lib

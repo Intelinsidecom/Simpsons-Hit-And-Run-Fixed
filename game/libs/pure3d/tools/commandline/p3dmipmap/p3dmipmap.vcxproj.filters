@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{932ccb9c-9c98-468e-9cc3-e2b7700073cb}</UniqueIdentifier>
+      <Extensions>*.cpp, *.c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{8d1e67e9-4675-4575-b758-6be5e7e96945}</UniqueIdentifier>
+      <Extensions>*.hpp, *.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="p3dmipmap.sc" />
+  </ItemGroup>
+</Project>

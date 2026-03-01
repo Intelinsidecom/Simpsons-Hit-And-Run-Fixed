@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>nbrooke-dual</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <ProjectGuid>{DE7DA99B-2B75-43DA-87D1-F2DB23FE4C0C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\obj/p3dview/Debug\</OutDir>
+    <IntDir>.\obj/p3dview/Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..\..;..\..\code;..\..\lib;..\..\..\..\..\radcore\inc;..\..\..\..\..\radcore\src;..\..\..\..\..\radmath;..\..\..\..\..\radcontent\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;_DEBUG;RAD_DEBUG;WIN32;RAD_WIN32;RAD_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\obj/p3dview/Debug/p3dview.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\obj/p3dview/Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\obj/p3dview/Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\obj/p3dview/Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;compile.obj;SetupAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../dist/p3dview.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>.\obj/p3dview/Debug/p3dview.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\obj/p3dview/Debug/p3dview.tlb</TypeLibraryName>
+    </Midl>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\..\build\lib\*d.dll ..\..\dist</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Message>Generating compile fingerprint...</Message>
+      <Command>..\..\tools\bin\win32\info &gt; obj\p3dview\compile.cpp
+cl /nologo /MTd /c obj\p3dview\compile.cpp
+</Command>
+    </PreLinkEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\data\config\client.ini">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\client.ini;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\default.cfg">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\default.cfg;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\input.cfg">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\input.cfg;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\menu.cfg">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\menu.cfg;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\server.ini">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\server.ini;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\makeavi.exe">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\makeavi.exe;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\scripts\avi.cfg">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying script : %(Filename).cfg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist\scripts &gt; nul</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\scripts\%(Filename).cfg;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\scripts\screenshot.cfg">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Copying script : %(Filename).cfg</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist\scripts &gt; nul</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\scripts\%(Filename).cfg;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\..\dist\client_user.ini" />
+    <None Include="..\..\dist\default_user.cfg" />
+    <None Include="..\..\dist\input_user.cfg" />
+    <None Include="..\..\dist\menu_user.cfg" />
+    <None Include="..\..\dist\server_user.ini" />
+    <CustomBuild Include="..\..\lib\xboxdbg\XboxDbg.Dll">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\XboxDbg.dll;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\data\help\changelist.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\%(Filename).txt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\help\commands.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\%(Filename).txt;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\help\quickhelp.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">copy "%(FullPath)" ..\..\dist</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\%(Filename).txt;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\client\client.hpp" />
+    <ClInclude Include="..\..\code\client\debugcom.hpp" />
+    <ClInclude Include="..\..\code\client\deci2boot\dbgp.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\dcmp.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\deci2.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\deci2boot.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\elf.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\list.h" />
+    <ClInclude Include="..\..\code\client\deci2boot\netmp.h" />
+    <ClInclude Include="..\..\code\client\ftthfs.hpp" />
+    <ClInclude Include="..\..\code\client\main.hpp" />
+    <ClInclude Include="..\..\code\client\remote.hpp" />
+    <ClInclude Include="..\..\code\client\remoteconnection.hpp" />
+    <ClInclude Include="..\..\code\client\servermanager.hpp" />
+    <ClInclude Include="..\..\code\config\arguments.hpp" />
+    <ClInclude Include="..\..\code\config\settings.hpp" />
+    <ClInclude Include="..\..\code\console\class.hpp" />
+    <ClInclude Include="..\..\code\console\commandline.hpp" />
+    <ClInclude Include="..\..\code\console\console.hpp" />
+    <ClInclude Include="..\..\code\console\enum.hpp" />
+    <ClInclude Include="..\..\code\console\function.hpp" />
+    <ClInclude Include="..\..\code\console\interface.hpp" />
+    <ClInclude Include="..\..\code\console\objectscripter.hpp" />
+    <ClInclude Include="..\..\code\console\quickviewp3d.hpp" />
+    <ClInclude Include="..\..\code\console\shatter.hpp" />
+    <ClInclude Include="..\..\code\console\types.hpp" />
+    <ClInclude Include="..\..\code\console\viewp3d.hpp" />
+    <ClInclude Include="..\..\code\console\winconsole.hpp" />
+    <ClInclude Include="..\..\code\file\bufferstream.hpp" />
+    <ClInclude Include="..\..\code\file\p3dfile.hpp" />
+    <ClInclude Include="..\..\code\file\textfile.hpp" />
+    <ClInclude Include="..\..\code\gui\win32\copydataadapter.hpp" />
+    <ClInclude Include="..\..\code\gui\win32\dragadapter.hpp" />
+    <ClInclude Include="..\..\code\gui\win32\filedialog.hpp" />
+    <ClInclude Include="..\..\code\gui\win32\menu.hpp" />
+    <ClInclude Include="..\..\code\gui\win32\window.hpp" />
+    <ClInclude Include="..\..\code\input\consolebindings.hpp" />
+    <ClInclude Include="..\..\code\input\gamecube\gcDriver.hpp" />
+    <ClInclude Include="..\..\code\input\inputdriver.hpp" />
+    <ClInclude Include="..\..\code\input\ps2\inputps2.hpp" />
+    <ClInclude Include="..\..\code\input\ps2\padman.h" />
+    <ClInclude Include="..\..\code\input\ps2\sio2man.h" />
+    <ClInclude Include="..\..\code\input\win32\inputwin32.hpp" />
+    <ClInclude Include="..\..\code\input\xbox\inputxbox.hpp" />
+    <ClInclude Include="..\..\code\interface\commandrecipient.hpp" />
+    <ClInclude Include="..\..\code\interface\display.hpp" />
+    <ClInclude Include="..\..\code\interface\io.hpp" />
+    <ClInclude Include="..\..\code\interface\kernel.hpp" />
+    <ClInclude Include="..\..\code\interface\subsystem.hpp" />
+    <ClInclude Include="..\..\code\interface\window.hpp" />
+    <ClInclude Include="..\..\code\kernel\gamecube\kernel.hpp" />
+    <ClInclude Include="..\..\code\kernel\linux\kernel.hpp" />
+    <ClInclude Include="..\..\code\kernel\ps2\kernel.hpp" />
+    <ClInclude Include="..\..\code\kernel\win32\kernel.hpp" />
+    <ClInclude Include="..\..\code\kernel\xbox\kernel.hpp" />
+    <ClInclude Include="..\..\code\plugin\module.hpp" />
+    <ClInclude Include="..\..\code\plugin\registry.hpp" />
+    <ClInclude Include="..\..\code\plugin\types.hpp" />
+    <ClInclude Include="..\..\code\rendering\grid.hpp" />
+    <ClInclude Include="..\..\code\rendering\lightdebug.hpp" />
+    <ClInclude Include="..\..\code\rendering\origin.hpp" />
+    <ClInclude Include="..\..\code\rendering\quakecam.hpp" />
+    <ClInclude Include="..\..\code\rendering\strokefont.hpp" />
+    <ClInclude Include="..\..\code\simcollision\collisiondisplay.hpp" />
+    <ClInclude Include="..\..\code\simcollision\collisionobject.hpp" />
+    <ClInclude Include="..\..\code\simcollision\collisionvolume.hpp" />
+    <ClInclude Include="..\..\code\simcommon\dline2.hpp" />
+    <ClInclude Include="..\..\code\simcommon\tlist.hpp" />
+    <ClInclude Include="..\..\code\utility\array.hpp" />
+    <ClInclude Include="..\..\code\utility\pointer.hpp" />
+    <ClInclude Include="..\..\code\utility\queue.hpp" />
+    <ClInclude Include="..\..\code\utility\smoother.hpp" />
+    <ClInclude Include="..\..\code\utility\string.hpp" />
+    <ClInclude Include="..\..\code\utility\symboltable.hpp" />
+    <ClInclude Include="..\..\code\utility\time.hpp" />
+    <ClInclude Include="..\..\code\viewer\capture.hpp" />
+    <ClInclude Include="..\..\code\viewer\collision.hpp" />
+    <ClInclude Include="..\..\code\viewer\compile.h" />
+    <ClInclude Include="..\..\code\viewer\lighting.hpp" />
+    <ClInclude Include="..\..\code\viewer\log.hpp" />
+    <ClInclude Include="..\..\code\viewer\objectlist.hpp" />
+    <ClInclude Include="..\..\code\viewer\overlay.hpp" />
+    <ClInclude Include="..\..\code\viewer\p3dcube.h" />
+    <ClInclude Include="..\..\code\viewer\server.hpp" />
+    <ClInclude Include="..\..\code\viewer\testpattern.h" />
+    <ClInclude Include="..\..\code\viewer\testpattern.hpp" />
+    <ClInclude Include="..\..\code\viewer\version.h" />
+    <ClInclude Include="..\..\code\viewer\viewer.hpp" />
+    <ClInclude Include="..\..\code\viewer\viewercamera.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\boot\gamecube\boot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\linux\boot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\ps2\boot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\win32\boot.cpp" />
+    <ClCompile Include="..\..\code\boot\xbox\boot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\client.cpp" />
+    <ClCompile Include="..\..\code\client\debugcom.cpp" />
+    <ClCompile Include="..\..\code\client\deci2boot\dbgp.c" />
+    <ClCompile Include="..\..\code\client\deci2boot\dcmp.c" />
+    <ClCompile Include="..\..\code\client\deci2boot\deci2boot.c" />
+    <ClCompile Include="..\..\code\client\deci2boot\elf.c" />
+    <ClCompile Include="..\..\code\client\deci2boot\list.c" />
+    <ClCompile Include="..\..\code\client\deci2boot\netmp.c" />
+    <ClCompile Include="..\..\code\client\ftthfs.cpp" />
+    <ClCompile Include="..\..\code\client\main.cpp" />
+    <ClCompile Include="..\..\code\client\remote.cpp" />
+    <ClCompile Include="..\..\code\client\servermanager.cpp" />
+    <ClCompile Include="..\..\code\config\arguments.cpp" />
+    <ClCompile Include="..\..\code\config\settings.cpp" />
+    <ClCompile Include="..\..\code\console\class.cpp" />
+    <ClCompile Include="..\..\code\console\commandline.cpp" />
+    <ClCompile Include="..\..\code\console\console.cpp" />
+    <ClCompile Include="..\..\code\console\enum.cpp" />
+    <ClCompile Include="..\..\code\console\function.cpp" />
+    <ClCompile Include="..\..\code\console\objectscripter.cpp" />
+    <ClCompile Include="..\..\code\console\quickviewp3d.cpp" />
+    <ClCompile Include="..\..\code\console\shatter.cpp" />
+    <ClCompile Include="..\..\code\console\types.cpp" />
+    <ClCompile Include="..\..\code\console\viewp3d.cpp" />
+    <ClCompile Include="..\..\code\console\winconsole.cpp" />
+    <ClCompile Include="..\..\code\file\bufferstream.cpp" />
+    <ClCompile Include="..\..\code\file\p3dfile.cpp" />
+    <ClCompile Include="..\..\code\file\textfile.cpp" />
+    <ClCompile Include="..\..\code\gui\win32\copydataadapter.cpp" />
+    <ClCompile Include="..\..\code\gui\win32\dragadapter.cpp" />
+    <ClCompile Include="..\..\code\gui\win32\filedialog.cpp" />
+    <ClCompile Include="..\..\code\gui\win32\menu.cpp" />
+    <ClCompile Include="..\..\code\gui\win32\window.cpp" />
+    <ClCompile Include="..\..\code\input\consolebindings.cpp" />
+    <ClCompile Include="..\..\code\input\gamecube\gcDriver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\ps2\inputps2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\win32\inputwin32.cpp" />
+    <ClCompile Include="..\..\code\input\xbox\inputxbox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\gamecube\kernel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\linux\kernel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\ps2\kernel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\win32\kernel.cpp" />
+    <ClCompile Include="..\..\code\kernel\xbox\kernel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\code\plugin\module.cpp" />
+    <ClCompile Include="..\..\code\plugin\modules\history.cpp" />
+    <ClCompile Include="..\..\code\plugin\modules\locators.cpp" />
+    <ClCompile Include="..\..\code\plugin\registry.cpp" />
+    <ClCompile Include="..\..\code\rendering\grid.cpp" />
+    <ClCompile Include="..\..\code\rendering\lightdebug.cpp" />
+    <ClCompile Include="..\..\code\rendering\origin.cpp" />
+    <ClCompile Include="..\..\code\rendering\quakecam.cpp" />
+    <ClCompile Include="..\..\code\rendering\strokefont.cpp" />
+    <ClCompile Include="..\..\code\simcollision\collisiondisplay.cpp" />
+    <ClCompile Include="..\..\code\simcollision\collisionobject.cpp" />
+    <ClCompile Include="..\..\code\simcollision\collisionvolume.cpp" />
+    <ClCompile Include="..\..\code\simcommon\dline2.cpp" />
+    <ClCompile Include="..\..\code\simcommon\tlist.cpp" />
+    <ClCompile Include="..\..\code\utility\string.cpp" />
+    <ClCompile Include="..\..\code\utility\symboltable.cpp" />
+    <ClCompile Include="..\..\code\utility\time.cpp" />
+    <ClCompile Include="..\..\code\viewer\capture.cpp" />
+    <ClCompile Include="..\..\code\viewer\collision.cpp" />
+    <ClCompile Include="..\..\code\viewer\lighting.cpp" />
+    <ClCompile Include="..\..\code\viewer\overlay.cpp" />
+    <ClCompile Include="..\..\code\viewer\server.cpp" />
+    <ClCompile Include="..\..\code\viewer\testpattern.cpp" />
+    <ClCompile Include="..\..\code\viewer\viewer.cpp" />
+    <ClCompile Include="..\..\code\viewer\viewercamera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\lib\xboxdbg\XboxDbg.Lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\build\win32\pddigl.vcxproj">
+      <Project>{ca2a1c85-ae21-4eb5-afc0-c8eb358ed280}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="launch.vcxproj">
+      <Project>{0e7074af-d274-4dc4-9c59-d63cb90a56d8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

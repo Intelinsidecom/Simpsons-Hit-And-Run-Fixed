@@ -1,0 +1,50 @@
+﻿  collision.cpp
+  collisionanalyser.cpp
+  collisionanalyserdata.cpp
+  collisionanalyserdataUID.cpp
+  collisionanalyserevent.cpp
+  collisionanalyserinfo.cpp
+  collisionanalysertranslator.cpp
+  collisiondetector.cpp
+  collisiondisplay.cpp
+  collisionmanager.cpp
+  collisionobject.cpp
+  collisionvolume.cpp
+  impulsebasedcollisionsolver.cpp
+  proximitydetection.cpp
+  subcollisiondetector.cpp
+  arraymath.cpp
+  dline2.cpp
+  impulselink.cpp
+  kalmann.cpp
+  largesymmetricmatrix.cpp
+  Generating Code...
+  Compiling...
+  physicsproperties.cpp
+  sbmatrix.cpp
+  simconstraint.cpp
+  simenvironment.cpp
+  simmath.cpp
+  simstate.cpp
+  simstatearticulated.cpp
+  simstateflexible.cpp
+  simstatetarget.cpp
+  simtarget.cpp
+  simulatedobject.cpp
+  simutility.cpp
+  skeletoninfo.cpp
+  symmatrix.cpp
+  tlist.cpp
+  trackerjointmodifier.cpp
+  trajectoryextrapolator.cpp
+  articulatedphysicsobject.cpp
+  physicsjoint.cpp
+  physicsobject.cpp
+  Generating Code...
+  Compiling...
+  restingdetector.cpp
+  virtualcm.cpp
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\sim\build\win32\.\Release\sim.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\sim\lib\simwr.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(sim) does not match the Library's OutputFile property value (simwr). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  sim.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\sim\build\win32\.\Release\sim.lib

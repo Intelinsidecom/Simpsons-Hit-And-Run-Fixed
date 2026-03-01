@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{45f7d9c3-88fc-4145-ab61-15922b934675}</UniqueIdentifier>
+      <Extensions>*.cpp,*.c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{3d5cba4a-0340-4f7b-971f-f2c6eff169f9}</UniqueIdentifier>
+      <Extensions>*.h,*.hpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="p3danim.sc" />
+  </ItemGroup>
+</Project>

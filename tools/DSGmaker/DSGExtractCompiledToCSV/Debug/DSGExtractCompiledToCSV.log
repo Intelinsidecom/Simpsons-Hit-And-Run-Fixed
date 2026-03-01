@@ -1,0 +1,6 @@
+﻿  main.cpp
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(304): warning C4244: 'initializing': conversion from 'std::streamoff' to 'std::size_t', possible loss of data
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(373): warning C4018: '<=': signed/unsigned mismatch
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgextractcompiledtocsv\main.cpp(526): warning C4018: '<=': signed/unsigned mismatch
+  DSGExtractCompiledToCSV.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\tools\DSGmaker\DSGExtractCompiledToCSV\Debug\DSGExtractCompiledToCSV.exe
+  DSGExtractCompiledToCSV.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\tools\DSGmaker\DSGExtractCompiledToCSV\Debug\DSGExtractCompiledToCSV.pdb (Full PDB)

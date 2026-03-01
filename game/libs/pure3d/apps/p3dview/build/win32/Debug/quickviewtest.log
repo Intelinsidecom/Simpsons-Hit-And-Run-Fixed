@@ -1,0 +1,10 @@
+﻿  quickview.cpp
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\apps\p3dview\code\quickview\quickview.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\apps\p3dview\code\quickview\quickview.cpp(45): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\apps\p3dview\code\quickview\quickview.cpp(61): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+quickview.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  quickviewtest.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\apps\p3dview\build\win32\.\Debug\quickviewtest.exe
+  quickviewtest.vcxproj -> .\Debug/quickviewtest.pdb (Full PDB)

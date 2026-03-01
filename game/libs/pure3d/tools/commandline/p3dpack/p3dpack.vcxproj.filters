@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{011e830e-3999-4976-8d4f-45d2c45d9a03}</UniqueIdentifier>
+      <Extensions>*.cpp, *.c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{6318c269-af7d-4409-999c-87a33a9753fa}</UniqueIdentifier>
+      <Extensions>*.hpp, *.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SubTexture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="SubTexture.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="p3dpack.sc" />
+  </ItemGroup>
+</Project>

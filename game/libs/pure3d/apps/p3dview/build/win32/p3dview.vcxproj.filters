@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{2cf03136-b757-4145-8d18-50953add0a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\scripts">
+      <UniqueIdentifier>{2fd06a7f-73fa-4438-a029-62c78f4a61d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\help">
+      <UniqueIdentifier>{af928a5a-27c8-4d11-ac6e-88697c5de4cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code">
+      <UniqueIdentifier>{6f342bd3-868d-4940-93f7-0c3153230497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\boot">
+      <UniqueIdentifier>{098dae31-44db-4e12-8af0-b048bd9d709a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\client">
+      <UniqueIdentifier>{07bc791c-661b-4ac3-b3fd-d827267ceadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\client\deci2boot">
+      <UniqueIdentifier>{8616fe33-9934-4fd1-8b31-547fe779079c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\config">
+      <UniqueIdentifier>{3343e0d0-2d26-4635-9099-0102d9ea9faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\console">
+      <UniqueIdentifier>{e291f8ae-4f3b-4555-aad5-68bcf0a712b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\file">
+      <UniqueIdentifier>{f21d4589-fa1d-4cc8-b097-6d9bc28cd366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\gui">
+      <UniqueIdentifier>{3f11ac77-25ef-4a13-bd30-0a86ce328886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\input">
+      <UniqueIdentifier>{50a70a1f-ab2b-4dd2-ab5a-3d59b73ae3d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\interface">
+      <UniqueIdentifier>{b04d0c28-ba6f-4d6c-a8b0-7b7865a87ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\kernel">
+      <UniqueIdentifier>{042f3076-0135-4c7f-b7c4-608e0238587b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\platforms">
+      <UniqueIdentifier>{1684e4cd-1f61-41d9-8482-48585ddb43da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\platforms\ps2">
+      <UniqueIdentifier>{4e423862-c1fa-42df-a35d-d60d8a854f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\platforms\xbox">
+      <UniqueIdentifier>{59c49f45-9e28-4eb6-a156-a9ef847c9b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\platforms\linux">
+      <UniqueIdentifier>{28666e91-5a38-436b-a03c-b188fa6c5626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\platforms\GameCube">
+      <UniqueIdentifier>{b4acc298-e277-4bf6-9c89-2a9e9d9d6eff}</UniqueIdentifier>
+      <Extensions>.cpp .hpp</Extensions>
+    </Filter>
+    <Filter Include="code\plugin">
+      <UniqueIdentifier>{f18c6515-5946-4cc4-bb0b-797ff36eb8ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\plugin\modules">
+      <UniqueIdentifier>{82a95b75-ee7b-4f5c-886c-e411d2556d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\rendering">
+      <UniqueIdentifier>{6a1fb826-ac94-4ff9-83e9-ade9c2f9747b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\utility">
+      <UniqueIdentifier>{e3f93497-1840-47e7-a9fb-1c41c26cb8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\viewer">
+      <UniqueIdentifier>{8207a244-e768-42e9-8c92-c8e5c4f9aa12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\simcollision">
+      <UniqueIdentifier>{058c8f8d-ca6a-4677-9f9f-da88dd4c4853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\simcommon">
+      <UniqueIdentifier>{e3fb1b61-229c-42dd-b463-224c1493fdd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{5ebb9319-817c-473e-90ba-94cfcc9fee41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dist\client_user.ini">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\dist\default_user.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\dist\input_user.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\dist\menu_user.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="..\..\dist\server_user.ini">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\viewer\version.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\client.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\debugcom.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\ftthfs.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\main.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\remote.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\remoteconnection.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\servermanager.hpp">
+      <Filter>code\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\dbgp.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\dcmp.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\deci2.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\deci2boot.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\elf.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\list.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\client\deci2boot\netmp.h">
+      <Filter>code\client\deci2boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\config\arguments.hpp">
+      <Filter>code\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\config\settings.hpp">
+      <Filter>code\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\class.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\commandline.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\console.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\enum.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\function.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\interface.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\objectscripter.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\quickviewp3d.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\shatter.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\types.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\viewp3d.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\console\winconsole.hpp">
+      <Filter>code\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\file\bufferstream.hpp">
+      <Filter>code\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\file\p3dfile.hpp">
+      <Filter>code\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\file\textfile.hpp">
+      <Filter>code\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\gui\win32\copydataadapter.hpp">
+      <Filter>code\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\gui\win32\dragadapter.hpp">
+      <Filter>code\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\gui\win32\filedialog.hpp">
+      <Filter>code\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\gui\win32\menu.hpp">
+      <Filter>code\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\gui\win32\window.hpp">
+      <Filter>code\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\consolebindings.hpp">
+      <Filter>code\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\inputdriver.hpp">
+      <Filter>code\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\win32\inputwin32.hpp">
+      <Filter>code\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\commandrecipient.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\display.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\io.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\kernel.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\subsystem.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\interface\window.hpp">
+      <Filter>code\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\kernel\win32\kernel.hpp">
+      <Filter>code\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\ps2\inputps2.hpp">
+      <Filter>code\platforms\ps2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\kernel\ps2\kernel.hpp">
+      <Filter>code\platforms\ps2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\ps2\padman.h">
+      <Filter>code\platforms\ps2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\ps2\sio2man.h">
+      <Filter>code\platforms\ps2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\xbox\inputxbox.hpp">
+      <Filter>code\platforms\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\kernel\xbox\kernel.hpp">
+      <Filter>code\platforms\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\kernel\linux\kernel.hpp">
+      <Filter>code\platforms\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\input\gamecube\gcDriver.hpp">
+      <Filter>code\platforms\GameCube</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\kernel\gamecube\kernel.hpp">
+      <Filter>code\platforms\GameCube</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\plugin\module.hpp">
+      <Filter>code\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\plugin\registry.hpp">
+      <Filter>code\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\plugin\types.hpp">
+      <Filter>code\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\rendering\grid.hpp">
+      <Filter>code\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\rendering\lightdebug.hpp">
+      <Filter>code\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\rendering\origin.hpp">
+      <Filter>code\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\rendering\quakecam.hpp">
+      <Filter>code\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\rendering\strokefont.hpp">
+      <Filter>code\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\array.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\pointer.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\queue.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\smoother.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\string.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\symboltable.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\utility\time.hpp">
+      <Filter>code\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\capture.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\collision.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\compile.h">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\lighting.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\log.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\objectlist.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\overlay.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\p3dcube.h">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\server.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\testpattern.h">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\testpattern.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\viewer.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\viewer\viewercamera.hpp">
+      <Filter>code\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\simcollision\collisiondisplay.hpp">
+      <Filter>code\simcollision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\simcollision\collisionobject.hpp">
+      <Filter>code\simcollision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\simcollision\collisionvolume.hpp">
+      <Filter>code\simcollision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\simcommon\dline2.hpp">
+      <Filter>code\simcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\simcommon\tlist.hpp">
+      <Filter>code\simcommon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\boot\win32\boot.cpp">
+      <Filter>code\boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\client.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\debugcom.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\ftthfs.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\main.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\remote.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\servermanager.cpp">
+      <Filter>code\client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\dbgp.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\dcmp.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\deci2boot.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\elf.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\list.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\client\deci2boot\netmp.c">
+      <Filter>code\client\deci2boot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\config\arguments.cpp">
+      <Filter>code\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\config\settings.cpp">
+      <Filter>code\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\class.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\commandline.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\console.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\enum.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\function.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\objectscripter.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\quickviewp3d.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\shatter.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\types.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\viewp3d.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\console\winconsole.cpp">
+      <Filter>code\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\file\bufferstream.cpp">
+      <Filter>code\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\file\p3dfile.cpp">
+      <Filter>code\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\file\textfile.cpp">
+      <Filter>code\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\gui\win32\copydataadapter.cpp">
+      <Filter>code\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\gui\win32\dragadapter.cpp">
+      <Filter>code\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\gui\win32\filedialog.cpp">
+      <Filter>code\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\gui\win32\menu.cpp">
+      <Filter>code\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\gui\win32\window.cpp">
+      <Filter>code\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\consolebindings.cpp">
+      <Filter>code\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\win32\inputwin32.cpp">
+      <Filter>code\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\win32\kernel.cpp">
+      <Filter>code\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\ps2\boot.cpp">
+      <Filter>code\platforms\ps2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\ps2\inputps2.cpp">
+      <Filter>code\platforms\ps2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\ps2\kernel.cpp">
+      <Filter>code\platforms\ps2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\xbox\boot.cpp">
+      <Filter>code\platforms\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\xbox\inputxbox.cpp">
+      <Filter>code\platforms\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\xbox\kernel.cpp">
+      <Filter>code\platforms\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\linux\boot.cpp">
+      <Filter>code\platforms\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\linux\kernel.cpp">
+      <Filter>code\platforms\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\boot\gamecube\boot.cpp">
+      <Filter>code\platforms\GameCube</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\input\gamecube\gcDriver.cpp">
+      <Filter>code\platforms\GameCube</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\kernel\gamecube\kernel.cpp">
+      <Filter>code\platforms\GameCube</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\plugin\module.cpp">
+      <Filter>code\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\plugin\registry.cpp">
+      <Filter>code\plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\plugin\modules\history.cpp">
+      <Filter>code\plugin\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\plugin\modules\locators.cpp">
+      <Filter>code\plugin\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\rendering\grid.cpp">
+      <Filter>code\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\rendering\lightdebug.cpp">
+      <Filter>code\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\rendering\origin.cpp">
+      <Filter>code\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\rendering\quakecam.cpp">
+      <Filter>code\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\rendering\strokefont.cpp">
+      <Filter>code\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\utility\string.cpp">
+      <Filter>code\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\utility\symboltable.cpp">
+      <Filter>code\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\utility\time.cpp">
+      <Filter>code\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\capture.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\collision.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\lighting.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\overlay.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\server.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\testpattern.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\viewer.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\viewer\viewercamera.cpp">
+      <Filter>code\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\simcollision\collisiondisplay.cpp">
+      <Filter>code\simcollision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\simcollision\collisionobject.cpp">
+      <Filter>code\simcollision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\simcollision\collisionvolume.cpp">
+      <Filter>code\simcollision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\simcommon\dline2.cpp">
+      <Filter>code\simcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\simcommon\tlist.cpp">
+      <Filter>code\simcommon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\lib\xboxdbg\XboxDbg.Lib">
+      <Filter>libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\data\config\client.ini">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\default.cfg">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\input.cfg">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\makeavi.exe">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\menu.cfg">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\config\server.ini">
+      <Filter>data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\scripts\avi.cfg">
+      <Filter>data\scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\scripts\screenshot.cfg">
+      <Filter>data\scripts</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\help\changelist.txt">
+      <Filter>data\help</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\help\commands.txt">
+      <Filter>data\help</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\data\help\quickhelp.txt">
+      <Filter>data\help</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\lib\xboxdbg\XboxDbg.Dll">
+      <Filter>libs</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

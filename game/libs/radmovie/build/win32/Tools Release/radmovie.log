@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  binkmovieplayer.cpp
+  binkradfile.cpp
+  binkrenderstrategy.cpp
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\build\win32\.\Tools Release\radmovie.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\lib\radmoviewtr.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(radmovie) does not match the Library's OutputFile property value (radmoviewtr). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  radmovie.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\radmovie\build\win32\.\Tools Release\radmovie.lib

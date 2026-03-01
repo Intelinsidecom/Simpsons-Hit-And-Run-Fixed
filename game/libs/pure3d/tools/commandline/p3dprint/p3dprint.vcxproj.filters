@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b18b1df5-0f96-4a0b-9cde-e48f3bcd4923}</UniqueIdentifier>
+      <Extensions>*.cpp,*.c</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{4205d2b1-2f8a-4a5a-8e9b-7e61e5d3cf35}</UniqueIdentifier>
+      <Extensions>*.hpp,*.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Param.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="version.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Param.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

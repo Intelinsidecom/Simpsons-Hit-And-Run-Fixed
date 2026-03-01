@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>build</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectGuid>{E33F9A92-3E44-4487-88FA-F23241127785}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\gamecube\files.txt" />
+    <Text Include="..\ps2\files.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gamecube">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building GameCube Viewer...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\gamecube
+build d</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\p3dviewg.elf;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gamecube_clean">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cleaning GameCube Viewer...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\gamecube
+build d clean</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\gamecube;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ps2">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building PS2 Viewer...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\ps2
+build t</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\p3dview.elf;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ps2_clean">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Cleaning PS2 Viewer...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\ps2
+build t clean</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\ps2;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="xbox">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building XBox Viewer...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd ..\xbox
+msdev p3dview.dsw /MAKE "p3dview - XBox Debug"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\dist\p3dview.xbe;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

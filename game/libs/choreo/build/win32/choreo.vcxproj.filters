@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{8b21ca99-6a84-4a5c-8add-276ad35f2e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="load">
+      <UniqueIdentifier>{29362b07-77d7-4173-a33e-321e8049a336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="feet">
+      <UniqueIdentifier>{309d96ed-b848-445a-b4ab-e76f27cb46a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="puppet">
+      <UniqueIdentifier>{4644c3cd-f75d-4dda-ac64-ecdd41735dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers">
+      <UniqueIdentifier>{474a0c26-ee85-46b8-9768-53868a0038d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\blendtemplate.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\constants.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\driver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\internalanimation.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jointblenddriver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jointblender.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\replayblenddriver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\replayblender.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rootblenddriver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rootblender.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utility.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\basebank.cpp">
+      <Filter>load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\load.cpp">
+      <Filter>load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scriptreader.cpp">
+      <Filter>load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scriptwriter.cpp">
+      <Filter>load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\footblenddriver.cpp">
+      <Filter>feet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\footblender.cpp">
+      <Filter>feet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\footplanter.cpp">
+      <Filter>feet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bank.cpp">
+      <Filter>puppet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine.cpp">
+      <Filter>puppet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\partition.cpp">
+      <Filter>puppet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puppet.cpp">
+      <Filter>puppet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rig.cpp">
+      <Filter>puppet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\animation.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blend.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\foot.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\locomotion.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\replay.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\root.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\synchronization.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transition.cpp">
+      <Filter>drivers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\choreo\blendtemplate.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\buildconfig.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\constants.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\driver.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\internalanimation.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\jointblenddriver.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\jointblender.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\replayblenddriver.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\replayblender.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\rootblenddriver.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\rootblender.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\utility.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\basebank.hpp">
+      <Filter>load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\load.hpp">
+      <Filter>load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\scriptreader.hpp">
+      <Filter>load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\scriptwriter.hpp">
+      <Filter>load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\footblenddriver.hpp">
+      <Filter>feet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\footblender.hpp">
+      <Filter>feet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\footplanter.hpp">
+      <Filter>feet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\bank.hpp">
+      <Filter>puppet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\engine.hpp">
+      <Filter>puppet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\partition.hpp">
+      <Filter>puppet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\puppet.hpp">
+      <Filter>puppet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\rig.hpp">
+      <Filter>puppet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\animation.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\blend.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\foot.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\locomotion.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\replay.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\root.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\synchronization.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\choreo\transition.hpp">
+      <Filter>drivers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

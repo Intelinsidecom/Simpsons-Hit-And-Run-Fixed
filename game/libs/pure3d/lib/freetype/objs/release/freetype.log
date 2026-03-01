@@ -1,0 +1,31 @@
+﻿  autohint.c
+  cff.c
+  ftbase.c
+  ftdebug.c
+  ftglyph.c
+  ftinit.c
+  ftmm.c
+  ftsystem.c
+..\..\..\src\base\ftsystem.c(131): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  pcf.c
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\lib\freetype\src\pcf\pcfread.c(454): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\lib\freetype\src\pcf\pcfread.c(464): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\lib\freetype\src\pcf\pcfread.c(970): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\lib\freetype\src\pcf\pcfread.c(1049): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+g:\newfolder\shr\simpsonshitrun\game\libs\pure3d\lib\freetype\src\pcf\pcfread.c(1050): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  psaux.c
+  psmodule.c
+..\..\..\src\psnames\psmodule.c(109): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+  raster.c
+  sfnt.c
+  smooth.c
+  truetype.c
+  type1.c
+  type1cid.c
+  winfnt.c
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\lib\freetype\builds\win32\visualc\.\..\..\..\objs\release\freetype.lib) does not match the Library's OutputFile property value (G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\lib\freetype\objs\freetyper.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(freetype) does not match the Library's OutputFile property value (freetyper). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  freetype.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\game\libs\pure3d\lib\freetype\builds\win32\visualc\.\..\..\..\objs\release\freetype.lib

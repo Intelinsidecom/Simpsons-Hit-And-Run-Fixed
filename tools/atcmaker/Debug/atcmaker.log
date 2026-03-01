@@ -1,0 +1,2 @@
+﻿  main.cpp
+LINK : fatal error LNK1104: cannot open file 'toollib_extras.lib'

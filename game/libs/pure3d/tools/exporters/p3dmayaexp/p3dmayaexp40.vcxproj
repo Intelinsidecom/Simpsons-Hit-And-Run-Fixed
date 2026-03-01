@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Tools Debug|Win32">
+      <Configuration>Tools Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Release|Win32">
+      <Configuration>Tools Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>p3dmayaexp4</ProjectName>
+    <SccProjectName>p3dmayaexp4</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>..\..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <ProjectGuid>{8D104C37-F7AA-43E0-A24E-95A90D99D07C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">
+    <OutDir>.\ToolsRelease\</OutDir>
+    <IntDir>.\ToolsRelease\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <OutDir>.\ToolsDebug\</OutDir>
+    <IntDir>.\ToolsDebug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../../..;..\..\plugins\maya;..\..\..\sdks\maya4_0\include;.;inc;..\..\..\toollib\inc;..\..\..\toollib\chunks16\inc;..\..\..\constants;..\..\..\apps\p3dview\code;..\..\..\lib\maya\inc;..\..\..\lib;../../../../radmath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MAYA4_0;RAD_TUNE;NT_PLUGIN;_WINDOWS;COMPILING_EXPORTER;WIN32;RAD_WIN32;RAD_PC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\ToolsRelease/p3dmayaexp40.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ToolsRelease/</AssemblerListingLocation>
+      <ObjectFileName>.\ToolsRelease/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ToolsRelease/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;shlwapi.lib;odbc32.lib;odbccp32.lib;version.lib;Foundation.lib;Image.lib;OpenMayaUI.lib;OpenMaya.lib;OpenMayaAnim.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>ToolsRelease\p3dmayaexp.mll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\sdks\maya4_0\lib;..\..\..\toollib\lib;..\..\..\build\win32\lib;..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\ToolsRelease/p3dmayaexp.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\ToolsRelease/p3dmayaexp.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\ToolsRelease/p3dmayaexp40.tlb</TypeLibraryName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying Exporter, MEL scripts, and Icons</Message>
+      <Command>copyreleasemll40.bat</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../..;..\..\plugins\maya;..\..\..\sdks\maya4_0\include;.;inc;..\..\..\toollib\inc;..\..\..\toollib\chunks16\inc;..\..\..\constants;..\..\..\apps\p3dview\code;..\..\..\lib\maya\inc;..\..\..\lib;../../../../radmath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MAYA4_0;_DEBUG;RAD_DEBUG;NT_PLUGIN;_WINDOWS;COMPILING_EXPORTER;WIN32;RAD_WIN32;RAD_PC;DEBUG_MEMORY_TRACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\ToolsDebug/p3dmayaexp40.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ToolsDebug/</AssemblerListingLocation>
+      <ObjectFileName>.\ToolsDebug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ToolsDebug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;shlwapi.lib;odbc32.lib;odbccp32.lib;version.lib;Foundation.lib;Image.lib;OpenMaya.lib;OpenMayaAnim.lib;OpenMayaUI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>ToolsDebug\p3dmayaexp.mll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\..\sdks\maya4_0\lib;..\..\..\toollib\lib;..\..\..\build\win32\lib;..\..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\ToolsDebug/p3dmayaexp.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\ToolsDebug/p3dmayaexp.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\ToolsDebug/p3dmayaexp40.tlb</TypeLibraryName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying Exporter, MEL scripts, and Icons</Message>
+      <Command>copyhybridmll40.bat</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\apps\p3dview\code\quickview\quickview.hpp" />
+    <ClInclude Include="..\..\plugins\maya\common\inc\mayaResolveName.hpp" />
+    <ClInclude Include="inc\animnode.hpp" />
+    <ClInclude Include="inc\animOptimization.hpp" />
+    <ClInclude Include="inc\animRange.hpp" />
+    <ClInclude Include="inc\billboardObject.hpp" />
+    <ClInclude Include="inc\boundingvolumes.hpp" />
+    <ClInclude Include="inc\deformerExpression.hpp" />
+    <ClInclude Include="inc\exporteroptions.hpp" />
+    <ClInclude Include="inc\exporterutility.hpp" />
+    <ClInclude Include="inc\exportFunctions.hpp" />
+    <ClInclude Include="inc\ExportLog.h" />
+    <ClInclude Include="inc\fileAttrib.hpp" />
+    <ClInclude Include="inc\iffreader.h" />
+    <ClInclude Include="inc\iffwriter.h" />
+    <ClInclude Include="inc\inventoryEntity.hpp" />
+    <ClInclude Include="inc\launchProcess.hpp" />
+    <ClInclude Include="inc\materialgui.hpp" />
+    <ClInclude Include="inc\materialprocess.hpp" />
+    <ClInclude Include="inc\mayanodes.hpp" />
+    <ClInclude Include="inc\meshprocess.hpp" />
+    <ClInclude Include="inc\opticEffects.hpp" />
+    <ClInclude Include="inc\p3dEventAnim.h" />
+    <ClInclude Include="inc\p3dEventKey.h" />
+    <ClInclude Include="inc\p3dexp.hpp" />
+    <ClInclude Include="inc\p3dExportSceneCmd.h" />
+    <ClInclude Include="inc\p3dmayaexp.hpp" />
+    <ClInclude Include="inc\p3dTagsCallback.h" />
+    <ClInclude Include="inc\particleAnimNode.hpp" />
+    <ClInclude Include="inc\particleSystem.hpp" />
+    <ClInclude Include="inc\plugValue.hpp" />
+    <ClInclude Include="inc\quickexporter.hpp" />
+    <ClInclude Include="inc\quickviewer.hpp" />
+    <ClInclude Include="inc\scene.hpp" />
+    <ClInclude Include="inc\scenegraph.hpp" />
+    <ClInclude Include="inc\set.hpp" />
+    <ClInclude Include="inc\shaderAnimNode.hpp" />
+    <ClInclude Include="inc\textureprocess.hpp" />
+    <ClInclude Include="inc\transformgui.hpp" />
+    <ClInclude Include="inc\transformmatrix.hpp" />
+    <ClInclude Include="inc\traversalcontroller.hpp" />
+    <ClInclude Include="inc\vertexAnimationAnimNode.hpp" />
+    <ClInclude Include="p3dres.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\plugins\maya\common\mel\p3dFrameLayout.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\plugins\maya\p3dBoundingVolume\mel\AEp3dPhysicsTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="copyhybridmll40.bat" />
+    <None Include="copyreleasemll40.bat" />
+    <CustomBuild Include="mel\AEblinnP3dRevision.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AElambertP3dRevision.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dAnimationOptimizationTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dEventAnimTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dExporterOptionsShapeTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dExportSettingNodeTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dLightCommon.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dRenderStatsTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dShapeTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEp3dVertexAnimationTemplate.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEphongP3dRevision.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\AEtransformP3dRevision.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\animChannelTable.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\animRangePanel.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dexpoptsgui.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMatAttr.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMayaExporterInstall.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dMayaExporterTools.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dRemapAttr.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\p3dtags.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mel\viewLog.mel">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Installing MEL to %(FullPath)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">attrib -r "c:\aw\maya4.0\scripts\others\%(Filename).mel"
+copy /Y "%(FullPath)" "c:\aw\maya4.0\scripts\others\%(Filename).mel"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">c:\aw\maya4.0\scripts\others\%(Filename).mel;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\apps\p3dview\code\quickview\quickview.cpp" />
+    <ClCompile Include="..\..\plugins\maya\common\src\mayaResolveName.cpp" />
+    <ClCompile Include="src\animnode.cpp" />
+    <ClCompile Include="src\animOptimization.cpp" />
+    <ClCompile Include="src\animRange.cpp" />
+    <ClCompile Include="src\billboardObject.cpp" />
+    <ClCompile Include="src\boundingvolumes.cpp" />
+    <ClCompile Include="src\deformerExpression.cpp" />
+    <ClCompile Include="src\exporteroptions.cpp" />
+    <ClCompile Include="src\exporterutility.cpp" />
+    <ClCompile Include="src\exportFunctions.cpp" />
+    <ClCompile Include="src\ExportLog.cpp" />
+    <ClCompile Include="src\fileAttrib.cpp" />
+    <ClCompile Include="src\iffreader.cpp" />
+    <ClCompile Include="src\iffwriter.cpp" />
+    <ClCompile Include="src\launchProcess.cpp" />
+    <ClCompile Include="src\materialgui.cpp" />
+    <ClCompile Include="src\materialprocess.cpp" />
+    <ClCompile Include="src\meshprocess.cpp" />
+    <ClCompile Include="src\opticEffects.cpp" />
+    <ClCompile Include="src\p3dEventAnim.cpp" />
+    <ClCompile Include="src\p3dEventKey.cpp" />
+    <ClCompile Include="src\p3dExportSceneCmd.cpp" />
+    <ClCompile Include="src\p3dmayaexp.cpp" />
+    <ClCompile Include="src\p3dTagsCallback.cpp" />
+    <ClCompile Include="src\particleAnimNode.cpp" />
+    <ClCompile Include="src\particleSystem.cpp" />
+    <ClCompile Include="src\quickexporter.cpp" />
+    <ClCompile Include="src\quickviewer.cpp" />
+    <ClCompile Include="src\scene.cpp" />
+    <ClCompile Include="src\scenegraph.cpp" />
+    <ClCompile Include="src\set.cpp" />
+    <ClCompile Include="src\shaderAnimNode.cpp" />
+    <ClCompile Include="src\textureprocess.cpp" />
+    <ClCompile Include="src\transformgui.cpp" />
+    <ClCompile Include="src\transformmatrix.cpp" />
+    <ClCompile Include="src\traversalcontroller.cpp" />
+    <ClCompile Include="src\vertexAnimationAnimNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="P3dexp.rc">
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">0x1009</Culture>
+      <ResourceOutputFileName Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">Release4/P3dexp.res</ResourceOutputFileName>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\lib\log\log.vcxproj">
+      <Project>{d1fb06cb-0811-4d9e-809e-951cd961dfeb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\maya\mayaDagSelection4.vcxproj">
+      <Project>{b65ee5be-c178-4514-bc51-ea3fde1b8093}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\maya\mayaProgress4.vcxproj">
+      <Project>{0b8ec31f-14ea-4eec-95b4-6102eecddff3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\maya\mayaShadingGroup.vcxproj">
+      <Project>{fb0eb3da-64e3-4091-8c83-27dc3b4a7dd3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\maya\mayaWorkspace.vcxproj">
+      <Project>{3ce32bc5-cf7d-4504-ba9d-b1e365604ff6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\memoryTrack\memoryTrack.vcxproj">
+      <Project>{7fa4edcd-0e9c-4803-9c83-b49b322c82da}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\regex\regex.vcxproj">
+      <Project>{f56859d4-9005-4612-aa23-6f7cb5369ca7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\rule\rule.vcxproj">
+      <Project>{d53664df-b602-40ad-8067-9d0334fbb336}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

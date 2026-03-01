@@ -1,0 +1,3 @@
+RowIndex,Sound,Particle,Animation,Friction,Mass,Elasticity
+0,"test_sound","test_particle","test_animation",1.0,2.0,0.5
+1,"sound2","particle2","animation2",0.8,1.5,0.7

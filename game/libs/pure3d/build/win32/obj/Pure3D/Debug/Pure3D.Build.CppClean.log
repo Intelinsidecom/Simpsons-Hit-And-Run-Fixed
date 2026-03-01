@@ -1,0 +1,417 @@
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.bsc
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vc120.pdb
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\ambientlight.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobject.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\bmp.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\camera.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraloader.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\chunkfile.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\context.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\debugdraw.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\directionallight.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\displaylist.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawable.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\dxtn.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\entity.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\error.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\file.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\fileftt.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\font.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\gameattr.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\geometry.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\image.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\image.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\geometry.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\gameattr.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\font.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\fileftt.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\file.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\error.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\entity.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\dxtn.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawable.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\displaylist.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\directionallight.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\debugdraw.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\context.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\chunkfile.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraloader.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\camera.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\bmp.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobject.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\ambientlight.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imageconverter.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefactory.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefont.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\inventory.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\light.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightloader.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightschooser.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loaders.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loadmanager.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\locator.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lzr.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\matrixstack.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memheap.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memory.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memorysection.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\png.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointcamera.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointlight.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\primgroup.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\rawimage.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\rawimage.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\primgroup.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointlight.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointcamera.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\png.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memorysection.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memory.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memheap.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\matrixstack.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lzr.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\locator.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loadmanager.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loaders.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightschooser.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightloader.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\light.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\inventory.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefont.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefactory.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imageconverter.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\refcounted.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shader.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\spotlight.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sprite.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\table.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\targa.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textdataparser.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textstring.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texture.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texturefont.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\unicode.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\utility.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vectorcamera.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexlist.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\view.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\plat_filemap.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animate.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animatedobject.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobjectanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobjectanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animatedobject.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animate.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\plat_filemap.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\view.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexlist.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vectorcamera.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\utility.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\unicode.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texturefont.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texture.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textstring.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textdataparser.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\targa.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\table.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sprite.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\spotlight.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shader.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\refcounted.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\channel.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\compositedrawable.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawablepose.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\event.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\eventanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expression.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionoffsets.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\instancedgeometry.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\multicontroller.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\polyskin.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pose.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\poseanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sequencer.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shaderanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\skeleton.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textureanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimcontroller.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimcontroller.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textureanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\skeleton.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shaderanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sequencer.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\poseanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pose.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\polyskin.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\multicontroller.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\instancedgeometry.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionoffsets.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expression.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\eventanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\event.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawablepose.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\compositedrawable.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\channel.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimkey.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimobject.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexoffsetexpression.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\visibilityanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\effect.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\optic.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticlensflare.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticloader.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlearray.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleemitter.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlegenerator.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleloader.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlepool.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlesystem.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particletype.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleutility.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\transitionmanager.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\nodeanimation.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\scenegraph.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\scenegraph.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\nodeanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\transitionmanager.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleutility.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particletype.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlesystem.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlepool.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleloader.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlegenerator.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleemitter.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlearray.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticloader.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticlensflare.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\optic.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\effect.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\visibilityanimation.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexoffsetexpression.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimobject.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimkey.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_common.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_generic.sbr
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_generic.obj
+g:\code\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_common.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.pdb
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\ambientlight.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobject.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\bmp.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\camera.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraloader.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\chunkfile.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\context.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\debugdraw.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\directionallight.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\displaylist.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawable.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\dxtn.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\entity.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\error.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\file.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\fileftt.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\font.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\gameattr.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\geometry.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\image.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\image.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\geometry.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\gameattr.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\font.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\fileftt.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\file.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\error.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\entity.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\dxtn.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawable.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\displaylist.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\directionallight.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\debugdraw.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\context.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\chunkfile.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraloader.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\camera.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\bmp.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobject.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\ambientlight.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imageconverter.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefactory.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefont.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\inventory.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\light.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightloader.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightschooser.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loaders.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loadmanager.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\locator.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lzr.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\matrixstack.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memheap.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memory.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memorysection.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\png.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointcamera.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointlight.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\primgroup.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\rawimage.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\rawimage.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\primgroup.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointlight.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pointcamera.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\png.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memorysection.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memory.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\memheap.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\matrixstack.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lzr.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\locator.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loadmanager.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\loaders.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightschooser.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightloader.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\light.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\inventory.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefont.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imagefactory.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\imageconverter.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\refcounted.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shader.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\spotlight.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sprite.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\table.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\targa.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textdataparser.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textstring.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texture.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texturefont.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\unicode.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\utility.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vectorcamera.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexlist.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\view.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\plat_filemap.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animate.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animatedobject.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobjectanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\billboardobjectanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animatedobject.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\animate.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\plat_filemap.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\view.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexlist.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vectorcamera.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\utility.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\unicode.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texturefont.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\texture.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textstring.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textdataparser.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\targa.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\table.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sprite.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\spotlight.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shader.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\refcounted.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\channel.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\compositedrawable.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawablepose.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\event.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\eventanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expression.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionoffsets.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\instancedgeometry.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\multicontroller.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\polyskin.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pose.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\poseanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sequencer.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shaderanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\skeleton.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textureanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimcontroller.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimcontroller.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\textureanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\skeleton.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shaderanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\sequencer.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\poseanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pose.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\polyskin.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\multicontroller.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\lightanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\instancedgeometry.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionoffsets.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expressionanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\expression.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\eventanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\event.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\drawablepose.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\compositedrawable.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\channel.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\cameraanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimkey.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimobject.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexoffsetexpression.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\visibilityanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\effect.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\optic.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticlensflare.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticloader.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlearray.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleemitter.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlegenerator.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleloader.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlepool.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlesystem.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particletype.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleutility.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\transitionmanager.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\nodeanimation.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\scenegraph.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_common.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_common.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\scenegraph.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\nodeanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\transitionmanager.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleutility.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particletype.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlesystem.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlepool.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleloader.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlegenerator.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particleemitter.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\particlearray.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticloader.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\opticlensflare.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\optic.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\effect.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\visibilityanimation.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexoffsetexpression.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimobject.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vertexanimkey.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_generic.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\shadow_generic.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\platform.sbr
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\platform.obj
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\lib\pure3dwd.lib
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\vc120.pdb
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\bscmake.command.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\bscmake.read.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\bscmake.write.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\cl.command.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\cl.read.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\cl.write.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\lib-link.read.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\lib-link.write.1.tlog
+g:\new folder\shr\simpsons hit&run\game\libs\pure3d\build\win32\obj\pure3d\debug\pure3d.tlog\lib.command.1.tlog

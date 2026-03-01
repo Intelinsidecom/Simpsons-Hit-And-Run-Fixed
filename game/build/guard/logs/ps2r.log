@@ -1,0 +1,5 @@
+------------------------------------------------------------------------------
+Simpsons 2 - Radbuild build process
+------------------------------------------------------------------------------
+..\..\libs\radbuild\GlobalTools\make: *** No rule to make target `D:/usr/local/sce/ee/gcc/ee/include/math.h', needed by `Release/allfootprint.d'.  Stop.
+------------------------------------------------------------------------------

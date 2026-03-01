@@ -1,0 +1,33 @@
+﻿  dsgmaker.cpp
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(237): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(443): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(586): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(649): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(650): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(56): warning C4101: 'querybuffer': unreferenced local variable
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(417): warning C4101: 'querybuffer': unreferenced local variable
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(899): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(905): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note: see declaration of 'strtok'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(906): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(911): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(915): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note: see declaration of 'strtok'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(919): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(922): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\newfolder\shr\simpsonshitrun\tools\dsgmaker\dsgmaker.cpp(928): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  DSGmaker.vcxproj -> G:\Newfolder\shr\SimpsonsHitRun\tools\DSGmaker\.\Debug\DSGmaker.exe
+  DSGmaker.vcxproj -> .\Debug\DSGmaker.pdb (Full PDB)

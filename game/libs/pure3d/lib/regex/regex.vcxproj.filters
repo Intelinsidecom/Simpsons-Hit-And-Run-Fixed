@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d14f3a37-5224-46c9-86cf-acefdd5f9ecd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{41566e2a-51e0-4deb-8a95-3dafa6bff118}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="regex++ %28John Maddock%29">
+      <UniqueIdentifier>{b4f3cc3e-d0b1-4046-8c3c-779f613cce6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regcomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regexec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regfree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regperform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\cregex.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\fileiter.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_cls.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_coll.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_dbg.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_mss.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_nls.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_nlsw.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_psx.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_psxw.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_strw.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\re_thrd.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\regex.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\regex++\src\regfac.cpp">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regcomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regex2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regexec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regfree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\regex++\include\cregex.h">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\regex++\include\fileiter.h">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\regex++\include\regex.h">
+      <Filter>regex++ %28John Maddock%29</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
